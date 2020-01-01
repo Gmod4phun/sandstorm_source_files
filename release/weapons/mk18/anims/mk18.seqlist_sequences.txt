@@ -1,0 +1,84 @@
+$sequence "AN_1P_MK18_B_Reload_Speed" {
+	"anims\AN_1P_MK18_B_Reload_Speed.smd"
+}
+
+$sequence "AN_1P_MK18_B_Reload_Start" {
+	"anims\AN_1P_MK18_B_Reload_Start.smd"
+}
+
+$sequence "AN_1P_MK18_B_Reload_Start_Empty" {
+	"anims\AN_1P_MK18_B_Reload_Start_Empty.smd"
+}
+
+$sequence "AN_1P_MK18_FG_Ready" {
+	"anims\AN_1P_MK18_FG_Ready.smd"
+}
+
+$sequence "AN_1P_MK18_FG_Reload" {
+	"anims\AN_1P_MK18_FG_Reload.smd"
+}
+
+$sequence "AN_1P_MK18_FG_Reload_Empty" {
+	"anims\AN_1P_MK18_FG_Reload_Empty.smd"
+}
+
+$sequence "AN_1P_MK18_FG_Reload_Empty_Speed" {
+	"anims\AN_1P_MK18_FG_Reload_Empty_Speed.smd"
+}
+
+$sequence "AN_1P_MK18_FG_Reload_Speed" {
+	"anims\AN_1P_MK18_FG_Reload_Speed.smd"
+}
+
+$sequence "AN_1P_MK18_G_B_Sight" {
+	"anims\AN_1P_MK18_G_B_Sight.smd"
+}
+
+$sequence "AN_1P_MK18_G_FG" {
+	"anims\AN_1P_MK18_G_FG.smd"
+}
+
+$sequence "AN_1P_MK18_B_FS_AutoSemi" {
+	"anims\AN_1P_MK18_B_FS_AutoSemi.smd"
+}
+
+$sequence "AN_1P_MK18_B_FS_SemiAuto" {
+	"anims\AN_1P_MK18_B_FS_SemiAuto.smd"
+}
+
+$sequence "AN_1P_MK18_B_Idle" {
+	"anims\AN_1P_MK18_B_Idle.smd"
+}
+
+$sequence "AN_1P_MK18_B_IRON_FS_AutoSemi" {
+	"anims\AN_1P_MK18_B_IRON_FS_AutoSemi.smd"
+}
+
+$sequence "AN_1P_MK18_B_IRON_FS_SemiAuto" {
+	"anims\AN_1P_MK18_B_IRON_FS_SemiAuto.smd"
+}
+
+$sequence "AN_1P_MK18_B_Melee" {
+	"anims\AN_1P_MK18_B_Melee.smd"
+}
+
+$sequence "AN_1P_MK18_B_Ready" {
+	"anims\AN_1P_MK18_B_Ready.smd"
+}
+
+$sequence "AN_1P_MK18_B_Reload" {
+	"anims\AN_1P_MK18_B_Reload.smd"
+}
+
+$sequence "AN_1P_MK18_B_Reload_Empty" {
+	"anims\AN_1P_MK18_B_Reload_Empty.smd"
+}
+
+$sequence "AN_1P_MK18_B_Reload_Empty_BoltRelease" {
+	"anims\AN_1P_MK18_B_Reload_Empty_BoltRelease.smd"
+}
+
+$sequence "AN_1P_MK18_B_Reload_Empty_Speed" {
+	"anims\AN_1P_MK18_B_Reload_Empty_Speed.smd"
+}
+

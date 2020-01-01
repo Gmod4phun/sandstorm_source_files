@@ -1,0 +1,26 @@
+$definebone "A_Optic" "b_wpn_optic" 0 0 0 0 180 -90 0 0 0 0 0 0
+$bonemerge "A_Optic"
+
+$definebone "A_Foregrip" "b_wpn_foregrip" 0 0 0 0 180 0 0 0 0 0 0 0
+$bonemerge "A_Foregrip"
+
+// $definebone "A_GL" "b_wpn_gl" 0 0 0 0 0 0 0 0 0 0 0 0
+// $bonemerge "A_GL"
+
+// $definebone "GL_Slide" "b_wpn_gl_slide" 0 0 0 0 0 0 0 0 0 0 0 0
+// $bonemerge "GL_Slide"
+
+// $definebone "GL_Trigger" "b_wpn_gl_trigger" 0 0 0 0 0 0 0 0 0 0 0 0
+// $bonemerge "GL_Trigger"
+
+// $definebone "GL_Round" "b_wpn_gl_round" 0 0 0 0 0 0 0 0 0 0 0 0
+// $bonemerge "GL_Round"
+
+// $definebone "GL_Casing" "b_wpn_gl_casing" 0 0 0 0 0 0 0 0 0 0 0 0
+// $bonemerge "GL_Casing"
+
+// $definebone "A_Optic" "b_wpn_gl_slidelock" 0 0 0 0 0 0 0 0 0 0 0 0
+// $bonemerge "A_Optic"
+
+// $definebone "A_GLMuzzle" "b_wpn_gl_muzzle" 0 0 0 0 0 0 0 0 0 0 0 0
+// $bonemerge "A_GLMuzzle"

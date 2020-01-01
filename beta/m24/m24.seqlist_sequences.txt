@@ -1,0 +1,112 @@
+$sequence "an_1p_m24_b_fire_cycle" {
+	"anims\an_1p_m24_b_fire_cycle.smd"
+}
+
+$sequence "an_1p_m24_b_fire_trigger" {
+	"anims\an_1p_m24_b_fire_trigger.smd"
+}
+
+$sequence "an_1p_m24_b_fire2" {
+	"anims\an_1p_m24_b_fire2.smd"
+}
+
+$sequence "an_1p_m24_b_idle" {
+	"anims\an_1p_m24_b_idle.smd"
+}
+
+$sequence "an_1p_m24_b_idle_empty" {
+	"anims\an_1p_m24_b_idle_empty.smd"
+}
+
+$sequence "an_1p_m24_b_idle_inspect" {
+	"anims\an_1p_m24_b_idle_inspect.smd"
+}
+
+$sequence "an_1p_m24_b_idle_pindepressed" {
+	"anims\an_1p_m24_b_idle_pindepressed.smd"
+}
+
+$sequence "an_1p_m24_b_iron_fire" {
+	"anims\an_1p_m24_b_iron_fire.smd"
+}
+
+$sequence "an_1p_m24_b_iron_fire_cycle" {
+	"anims\an_1p_m24_b_iron_fire_cycle.smd"
+}
+
+$sequence "an_1p_m24_b_melee" {
+	"anims\an_1p_m24_b_melee.smd"
+}
+
+$sequence "an_1p_m24_b_ready" {
+	"anims\an_1p_m24_b_ready.smd"
+}
+
+$sequence "an_1p_m24_b_reload_end" {
+	"anims\an_1p_m24_b_reload_end.smd"
+}
+
+$sequence "an_1p_m24_b_reload_insert" {
+	"anims\an_1p_m24_b_reload_insert.smd"
+}
+
+$sequence "an_1p_m24_b_reload_startempty" {
+	"anims\an_1p_m24_b_reload_startempty.smd"
+}
+
+$sequence "an_1p_m24_dep_fire" {
+	"anims\an_1p_m24_dep_fire.smd"
+}
+
+$sequence "an_1p_m24_dep_fire_cycle" {
+	"anims\an_1p_m24_dep_fire_cycle.smd"
+}
+
+$sequence "an_1p_m24_dep_fire2" {
+	"anims\an_1p_m24_dep_fire2.smd"
+}
+
+$sequence "an_1p_m24_dep_idle" {
+	"anims\an_1p_m24_dep_idle.smd"
+}
+
+$sequence "an_1p_m24_dep_iron_fire" {
+	"anims\an_1p_m24_dep_iron_fire.smd"
+}
+
+$sequence "an_1p_m24_dep_reload_end" {
+	"anims\an_1p_m24_dep_reload_end.smd"
+}
+
+$sequence "an_1p_m24_dep_reload_insert" {
+	"anims\an_1p_m24_dep_reload_insert.smd"
+}
+
+$sequence "an_1p_m24_dep_reload_startempty" {
+	"anims\an_1p_m24_dep_reload_startempty.smd"
+}
+
+$sequence "an_1p_m24_g_b_sight" {
+	"anims\an_1p_m24_g_b_sight.smd"
+}
+
+$sequence "an_1p_m24_g_deployed" {
+	"anims\an_1p_m24_g_deployed.smd"
+}
+
+$sequence "an_1p_m24_b_bipodclose" {
+	"anims\an_1p_m24_b_bipodclose.smd"
+}
+
+$sequence "an_1p_m24_b_bipodopen" {
+	"anims\an_1p_m24_b_bipodopen.smd"
+}
+
+$sequence "an_1p_m24_b_down" {
+	"anims\an_1p_m24_b_down.smd"
+}
+
+$sequence "an_1p_m24_b_fire" {
+	"anims\an_1p_m24_b_fire.smd"
+}
+

@@ -1,0 +1,157 @@
+$definebone "b_ch_l_forearm_twist1" "L ForeTwist" 0 0 0 0 0 0 0 0 0 0 0 0
+$definebone "b_ch_l_forearm_twist2" "L ForeTwist1" 0 0 0 0 0 0 0 0 0 0 0 0
+$definebone "b_ch_l_forearm_twist3" "L ForeTwist2" 0 0 0 0 0 0 0 0 0 0 0 0
+$definebone "b_ch_l_forearm_twist4" "L ForeTwist3" 0 0 0 0 0 0 0 0 0 0 0 0
+$definebone "b_ch_l_forearm_twist5" "L ForeTwist4" 0 0 0 0 0 0 0 0 0 0 0 0
+$definebone "b_ch_l_forearm_twist6" "L ForeTwist5" 0 0 0 0 0 0 0 0 0 0 0 0
+$definebone "b_ch_l_forearm_twist7" "L ForeTwist6" 0 0 0 0 0 0 0 0 0 0 0 0
+$definebone "b_ch_l_finger_02" "L Finger02" 0 0 0 0 0 0 0 0 0 0 0 0
+$definebone "b_ch_l_finger_01" "L Finger01" 0 0 0 0 0 0 0 0 0 0 0 0
+$definebone "b_ch_l_finger_00" "L Finger0" 0 0 0 0 0 0 0 0 0 0 0 0
+$definebone "b_ch_l_finger_42" "L Finger42" 0 0 0 0 0 0 0 0 0 0 0 0
+$definebone "b_ch_l_finger_41" "L Finger41" 0 0 0 0 0 0 0 0 0 0 0 0
+$definebone "b_ch_l_finger_40" "L Finger4" 0 0 0 0 0 0 0 0 0 0 0 0
+$definebone "b_ch_l_finger_22" "L Finger22" 0 0 0 0 0 0 0 0 0 0 0 0
+$definebone "b_ch_l_finger_21" "L Finger21" 0 0 0 0 0 0 0 0 0 0 0 0
+$definebone "b_ch_l_finger_20" "L Finger2" 0 0 0 0 0 0 0 0 0 0 0 0
+$definebone "b_ch_l_finger_32" "L Finger32" 0 0 0 0 0 0 0 0 0 0 0 0
+$definebone "b_ch_l_finger_31" "L Finger31" 0 0 0 0 0 0 0 0 0 0 0 0
+$definebone "b_ch_l_finger_30" "L Finger3" 0 0 0 0 0 0 0 0 0 0 0 0
+$definebone "b_ch_l_finger_12" "L Finger12" 0 0 0 0 0 0 0 0 0 0 0 0
+$definebone "b_ch_l_finger_11" "L Finger11" 0 0 0 0 0 0 0 0 0 0 0 0
+$definebone "b_ch_l_finger_10" "L Finger1" 0 0 0 0 0 0 0 0 0 0 0 0
+$definebone "b_ch_l_hand" "L Hand" 0 0 0 0 0 0 0 0 0 0 0 0
+$definebone "b_ch_l_forearm" "L Forearm" 0 0 0 0 0 0 0 0 0 0 0 0
+$definebone "b_ch_l_upperarm" "L UpperArm" 0 0 0 0 0 0 0 0 0 0 0 0
+$definebone "b_ch_l_clavical" "L Clavicle" 0 0 0 0 0 0 0 0 0 0 0 0
+$definebone "b_ch_r_forearm_twist1" "R ForeTwist" 0 0 0 0 0 0 0 0 0 0 0 0
+$definebone "b_ch_r_forearm_twist2" "R ForeTwist1" 0 0 0 0 0 0 0 0 0 0 0 0
+$definebone "b_ch_r_forearm_twist3" "R ForeTwist2" 0 0 0 0 0 0 0 0 0 0 0 0
+$definebone "b_ch_r_forearm_twist4" "R ForeTwist3" 0 0 0 0 0 0 0 0 0 0 0 0
+$definebone "b_ch_r_forearm_twist5" "R ForeTwist4" 0 0 0 0 0 0 0 0 0 0 0 0
+$definebone "b_ch_r_forearm_twist6" "R ForeTwist5" 0 0 0 0 0 0 0 0 0 0 0 0
+$definebone "b_ch_r_forearm_twist7" "R ForeTwist6" 0 0 0 0 0 0 0 0 0 0 0 0
+$definebone "b_ch_r_finger_02" "R Finger02" 0 0 0 0 0 0 0 0 0 0 0 0
+$definebone "b_ch_r_finger_01" "R Finger01" 0 0 0 0 0 0 0 0 0 0 0 0
+$definebone "b_ch_r_finger_00" "R Finger0" 0 0 0 0 0 0 0 0 0 0 0 0
+$definebone "b_ch_r_finger_12" "R Finger12" 0 0 0 0 0 0 0 0 0 0 0 0
+$definebone "b_ch_r_finger_11" "R Finger11" 0 0 0 0 0 0 0 0 0 0 0 0
+$definebone "b_ch_r_finger_10" "R Finger1" 0 0 0 0 0 0 0 0 0 0 0 0
+$definebone "b_ch_r_finger_22" "R Finger22" 0 0 0 0 0 0 0 0 0 0 0 0
+$definebone "b_ch_r_finger_21" "R Finger21" 0 0 0 0 0 0 0 0 0 0 0 0
+$definebone "b_ch_r_finger_20" "R Finger2" 0 0 0 0 0 0 0 0 0 0 0 0
+$definebone "b_ch_r_finger_32" "R Finger32" 0 0 0 0 0 0 0 0 0 0 0 0
+$definebone "b_ch_r_finger_31" "R Finger31" 0 0 0 0 0 0 0 0 0 0 0 0
+$definebone "b_ch_r_finger_30" "R Finger3" 0 0 0 0 0 0 0 0 0 0 0 0
+$definebone "b_ch_r_finger_42" "R Finger42" 0 0 0 0 0 0 0 0 0 0 0 0
+$definebone "b_ch_r_finger_41" "R Finger41" 0 0 0 0 0 0 0 0 0 0 0 0
+$definebone "b_ch_r_finger_40" "R Finger4" 0 0 0 0 0 0 0 0 0 0 0 0
+$definebone "b_ch_r_hand" "R Hand" 0 0 0 0 0 0 0 0 0 0 0 0
+$definebone "b_ch_r_forearm" "R Forearm" 0 0 0 0 0 0 0 0 0 0 0 0
+$definebone "b_ch_r_upperarm" "R UpperArm" 0 0 0 0 0 0 0 0 0 0 0 0
+$definebone "b_ch_r_clavical" "R Clavicle" 0 0 0 0 0 0 0 0 0 0 0 0
+
+$bonemerge "b_ch_l_clavical"
+$bonemerge "b_ch_l_upperarm"
+$bonemerge "b_ch_l_forearm"
+$bonemerge "b_ch_l_forearm_twist1"
+$bonemerge "L ForeTwist"
+$bonemerge "b_ch_l_forearm_twist2"
+$bonemerge "L ForeTwist1"
+$bonemerge "b_ch_l_forearm_twist3"
+$bonemerge "L ForeTwist2"
+$bonemerge "b_ch_l_forearm_twist4"
+$bonemerge "L ForeTwist3"
+$bonemerge "b_ch_l_forearm_twist5"
+$bonemerge "L ForeTwist4"
+$bonemerge "b_ch_l_forearm_twist6"
+$bonemerge "L ForeTwist5"
+$bonemerge "b_ch_l_forearm_twist7"
+$bonemerge "L ForeTwist6"
+$bonemerge "b_ch_l_hand"
+$bonemerge "b_ch_l_finger_00"
+$bonemerge "b_ch_l_finger_01"
+$bonemerge "b_ch_l_finger_02"
+$bonemerge "L Finger02"
+$bonemerge "L Finger01"
+$bonemerge "L Finger0"
+$bonemerge "b_ch_l_finger_40"
+$bonemerge "b_ch_l_finger_41"
+$bonemerge "b_ch_l_finger_42"
+$bonemerge "L Finger42"
+$bonemerge "L Finger41"
+$bonemerge "L Finger4"
+$bonemerge "b_ch_l_finger_20"
+$bonemerge "b_ch_l_finger_21"
+$bonemerge "b_ch_l_finger_22"
+$bonemerge "L Finger22"
+$bonemerge "L Finger21"
+$bonemerge "L Finger2"
+$bonemerge "b_ch_l_finger_30"
+$bonemerge "b_ch_l_finger_31"
+$bonemerge "b_ch_l_finger_32"
+$bonemerge "L Finger32"
+$bonemerge "L Finger31"
+$bonemerge "L Finger3"
+$bonemerge "b_ch_l_finger_10"
+$bonemerge "b_ch_l_finger_11"
+$bonemerge "b_ch_l_finger_12"
+$bonemerge "L Finger12"
+$bonemerge "L Finger11"
+$bonemerge "L Finger1"
+$bonemerge "L Hand"
+$bonemerge "L Forearm"
+$bonemerge "L UpperArm"
+$bonemerge "L Clavicle"
+$bonemerge "b_ch_r_clavical"
+$bonemerge "b_ch_r_upperarm"
+$bonemerge "b_ch_r_forearm"
+$bonemerge "b_ch_r_forearm_twist1"
+$bonemerge "R ForeTwist"
+$bonemerge "b_ch_r_forearm_twist2"
+$bonemerge "R ForeTwist1"
+$bonemerge "b_ch_r_forearm_twist3"
+$bonemerge "R ForeTwist2"
+$bonemerge "b_ch_r_forearm_twist4"
+$bonemerge "R ForeTwist3"
+$bonemerge "b_ch_r_forearm_twist5"
+$bonemerge "R ForeTwist4"
+$bonemerge "b_ch_r_forearm_twist6"
+$bonemerge "R ForeTwist5"
+$bonemerge "b_ch_r_forearm_twist7"
+$bonemerge "R ForeTwist6"
+$bonemerge "b_ch_r_hand"
+$bonemerge "b_ch_r_finger_00"
+$bonemerge "b_ch_r_finger_01"
+$bonemerge "b_ch_r_finger_02"
+$bonemerge "R Finger02"
+$bonemerge "R Finger01"
+$bonemerge "R Finger0"
+$bonemerge "b_ch_r_finger_10"
+$bonemerge "b_ch_r_finger_11"
+$bonemerge "b_ch_r_finger_12"
+$bonemerge "R Finger12"
+$bonemerge "R Finger11"
+$bonemerge "R Finger1"
+$bonemerge "b_ch_r_finger_20"
+$bonemerge "b_ch_r_finger_21"
+$bonemerge "b_ch_r_finger_22"
+$bonemerge "R Finger22"
+$bonemerge "R Finger21"
+$bonemerge "R Finger2"
+$bonemerge "b_ch_r_finger_30"
+$bonemerge "b_ch_r_finger_31"
+$bonemerge "b_ch_r_finger_32"
+$bonemerge "R Finger32"
+$bonemerge "R Finger31"
+$bonemerge "R Finger3"
+$bonemerge "b_ch_r_finger_40"
+$bonemerge "b_ch_r_finger_41"
+$bonemerge "b_ch_r_finger_42"
+$bonemerge "R Finger42"
+$bonemerge "R Finger41"
+$bonemerge "R Finger4"
+$bonemerge "R Hand"
+$bonemerge "R Forearm"
+$bonemerge "R UpperArm"
+$bonemerge "R Clavicle"

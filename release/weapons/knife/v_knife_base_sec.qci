@@ -1,0 +1,94 @@
+// Created by Crowbar 0.55
+
+$surfaceprop "default"
+$contents "solid"
+
+$cdmaterials "models\weapons\ins2_sandstorm\"
+
+$include "v_knife_bones.qci"
+
+$include "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\ins2_bones_follow_sandstorm.qci"
+$include "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\sandstorm_deltas_macros.qci"
+
+$animation "a_base_slash" "anims\an_1p_knife_b_idle.smd" frames 0 47
+
+$sequence "idle" {
+	"anims\an_1p_knife_b_idle.smd"
+	activity "ACT_VM_IDLE" 1
+	addlayer "layer_breathing"
+	fps 24
+	loop
+}
+
+$sequence "hitcenter1" {
+	a_base_slash
+	activity "ACT_VM_HITCENTER" 1
+	{ event 1338 7 "" }
+	addlayer "seq_base_slash_t_b"
+}
+
+$sequence "hitcenter2" {
+	a_base_slash
+	activity "ACT_VM_HITCENTER" 1
+	{ event 1338 7 "" }
+	addlayer "seq_base_slash_l_r"
+}
+
+$sequence "hitcenter3" {
+	a_base_slash
+	activity "ACT_VM_HITCENTER" 1
+	{ event 1338 7 "" }
+	addlayer "seq_base_slash_r_l"
+}
+
+$sequence "down" {
+	"anims\an_1p_knife_b_down.smd"
+	activity "ACT_VM_DOWN" 1
+	addlayer "layer_breathing"
+	fps 24
+	loop
+}
+
+$sequence "draw" {
+	"anims\an_1p_knife_b_draw.smd"
+	activity "ACT_VM_DRAW" 1
+	{ event 5004 0 "Universal.Draw" }
+	// fps 30
+}
+
+$sequence "holster" {
+	"anims\an_1p_knife_b_holster.smd"
+	activity "ACT_VM_HOLSTER" 1
+	{ event 5004 0 "Universal.Holster" }
+	fadein 0.5
+	// fps 30
+}
+
+$sequence "crawl" {
+	"F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_base\anims\AN_1P_GEN_B_M_Crawl_N.smd"
+	activity "ACT_VM_CRAWL" 1
+	{ event 5004 10 "Universal.RightCrawl" }
+	{ event 5004 20 "Universal.LeftCrawl" }
+	loop
+}
+
+$sequence "sprint" {
+	"F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_base\anims\AN_1P_GEN_B_M_Sprint.smd"
+	activity "ACT_VM_SPRINT" 1
+	fps 34
+	loop
+}
+
+
+// nonoriginal
+
+$deltasequence "seq_base_slash" "anims\an_1p_knife_b_slash.smd"
+$deltasequence "seq_base_slash_bl_tr" "anims\an_1p_knife_b_slash_bl_tr.smd"
+$deltasequence "seq_base_slash_br_tl" "anims\an_1p_knife_b_slash_br_tl.smd"
+$deltasequence "seq_base_slash_l_r" "anims\an_1p_knife_b_slash_l_r.smd"
+$deltasequence "seq_base_slash_r_l" "anims\an_1p_knife_b_slash_r_l.smd"
+$deltasequence "seq_base_slash_t_b" "anims\an_1p_knife_b_slash_t_b.smd"
+$deltasequence "seq_base_slash_tl_br" "anims\an_1p_knife_b_slash_tl_br.smd"
+$deltasequence "seq_base_slash_tr_bl" "anims\an_1p_knife_b_slash_tr_bl.smd"
+
+$deltasequence "layer_breathing" "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_base\anims\AN_1P_GEN_B_Breathing_01.smd"

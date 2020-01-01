@@ -1,0 +1,104 @@
+//
+// adding special sandstorm sequences with explanation
+//
+// after spending some time on this subject, here are some sandstorm delta sequence types:
+//
+// Type 1: regular delta sequence
+// just a regular delta sequence, nothing interesting
+// for example bolt, trigger, safety, slide, foregrip etc sequences
+//
+// $sequence "delta_seq_name" delta {
+//     "file.smd"
+// }
+//
+//
+// Type 2: regular predelta sequence
+// a predelta sequence, pretty much same as delta
+// for example draw, holster, down sequences
+//
+// $sequence "delta_seq_name" predelta {
+//     "file.smd"
+// }
+//
+//
+// Type 3: linear predelta animation sequence:
+// this was discovered by messing around with different stuff, it is similiar to the second type
+// first thing required is an animation with the lineardelta option
+// then add the animation into a type 2 predelta sequence
+// for example fire, pump/cycle, inspect sequences
+//
+// I made a macro for this type, the first 2 types should be written by hand and are straightforward anyway
+// the command is: $linearpredelta "seqname" "file.smd"
+//
+// $animation "anim_name" "file.smd" lineardelta
+// $sequence "delta_seq_name" predelta anim_name
+//
+//
+// you can also use weightlists and other stuff to control the sequences:
+// as for the hands, some sequences should have disabled the clavical bones movement, whereas others should not
+// some should have just one of them enabled, its a matter of experimenting
+// most often the clavicals are disabled, from upperarms until hands are enabled, and fingers are disabled
+//
+// as for the weapon, the weapon bone itself is enabled and other parts - trigger, bolt, etc are disabled
+// some sequences require weightlists, others work just fine without using them
+//
+// keep in mind that these are still just deltas, not actual sequences
+// however it is easy to make usable sequences by adding them onto a blank/idle sequence or by other means
+//
+
+$definemacro linearpredelta seqname smdfile \\
+$animation anim_linearpredelta_$seqname$ $smdfile$ { \\
+	lineardelta \\
+} \\
+$sequence $seqname$ predelta { \\
+	anim_linearpredelta_$seqname$ \\
+	// hidden \\
+}
+
+
+
+
+
+// test macro for adding a complete (sort of) type 3 sequences
+// this makes a type 3 delta sequence, then animation with the same sequence but with no movement, rotates it via a weightlist, and adds the delta sequence to the empty anim
+// this will also need some more weightlists for more control, but it's still a wip
+
+$weightlist "weights_rotate_90" {
+	"b_root" 1
+	"b_ch_middle" 0
+	"b_wpn" 0
+}
+
+$definemacro deltasequence seqname smdfile \\
+$animation anim_delta_$seqname$ $smdfile$ { \\
+	lineardelta \\
+} \\
+$sequence seq_delta_$seqname$ predelta { \\
+	anim_delta_$seqname$ \\
+	hidden \\
+} \\
+$animation anim_blank_$seqname$ $smdfile$ { \\
+	weightlist "weights_rotate_90" \\
+} \\
+$sequence $seqname$ { \\
+	anim_blank_$seqname$ \\
+	addlayer seq_delta_$seqname$ \\
+}
+
+$definemacro deltasequenceframes seqname smdfile end \\
+$animation anim_delta_$seqname$ $smdfile$ { \\
+	lineardelta \\
+	frames 0 $end$ \\
+} \\
+$sequence seq_delta_$seqname$ predelta { \\
+	anim_delta_$seqname$ \\
+	hidden \\
+} \\
+$animation anim_blank_$seqname$ $smdfile$ { \\
+	weightlist "weights_rotate_90" \\
+	frames 0 $end$ \\
+} \\
+$sequence $seqname$ { \\
+	anim_blank_$seqname$ \\
+	addlayer seq_delta_$seqname$ \\
+}

@@ -1,0 +1,24 @@
+// Created by Crowbar 0.55
+
+$include "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\unreal_scale.qci"
+
+$modelname "weapons\upgrades\a_standard_l1a1.mdl"
+
+$bodygroup "sight"
+{
+	studio "SKM_1P_FalSight_Up.smd"
+}
+
+$surfaceprop "default"
+$contents "solid"
+
+// $illumposition 0 0 0
+
+$renamematerial "MI_1P_Fal" "MI_1P_L1A1_Custom"
+
+$cdmaterials "models\weapons\upgrades\"
+$cdmaterials "models\weapons\ins2_sandstorm\"
+
+$sequence "idle" {
+	"SKM_1P_FalSight_Up.smd"
+}

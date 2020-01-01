@@ -1,0 +1,10 @@
+"SurfaceGGX"
+{
+	"$basetexture" "gmod4phun\sandstorm\weapons\mk17\T_1P_MK17_D"
+	"$bumpmap" "gmod4phun\sandstorm\weapons\mk17\T_1P_MK17_N"
+	"$phongexponenttexture" "gmod4phun\sandstorm\weapons\mk17\T_1P_MK17_R"
+	"$color" "[1.0 1.0 1.0]"
+	
+	"$roughnessmultiplier" "0.7"
+	"$metal" "1"
+}
