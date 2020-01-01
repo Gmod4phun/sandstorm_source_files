@@ -208,7 +208,7 @@ $sequence "base_crawl" {
 	{ event 5004 20 "Universal.LeftCrawl" }
 	fadein 0.2
 	fadeout 0.2
-	fps 29
+	fps 30
 	loop
 }
 

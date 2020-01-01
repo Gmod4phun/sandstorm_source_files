@@ -206,7 +206,7 @@ $sequence "crawl" {
 	{ event 5004 20 "Universal.LeftCrawl" }
 	fadein 0.2
 	fadeout 0.2
-	fps 29
+	fps 30
 	loop
 }
 
@@ -215,7 +215,7 @@ $sequence "sprint" {
 	activity "ACT_VM_SPRINT" 1
 	fadein 0.2
 	fadeout 0.2
-	fps 25
+	fps 30
 	loop
 }
 
