@@ -102,3 +102,20 @@ $sequence $seqname$ { \\
 	anim_blank_$seqname$ \\
 	addlayer seq_delta_$seqname$ \\
 }
+
+$definemacro deltasequenceweightlist seqname smdfile wlist \\
+$animation anim_delta_$seqname$ $smdfile$ { \\
+	lineardelta \\
+} \\
+$sequence seq_delta_$seqname$ predelta { \\
+	anim_delta_$seqname$ \\
+	hidden \\
+	weightlist $wlist$\\
+} \\
+$animation anim_blank_$seqname$ $smdfile$ { \\
+	weightlist "weights_rotate_90" \\
+} \\
+$sequence $seqname$ { \\
+	anim_blank_$seqname$ \\
+	addlayer seq_delta_$seqname$ \\
+}
