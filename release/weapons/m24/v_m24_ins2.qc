@@ -900,13 +900,13 @@ $deltasequence "seq_iron_fire_start" "anims\an_1p_m24_b_iron_fire.smd"
 $deltasequence "seq_iron_fire_end" "anims\an_1p_m24_b_iron_fire_cycle.smd"
 
 $sequence "base_draw_test" predelta {
-	"F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_rif\orig\an_1p_gen_rif_b_draw.smd"
+	"F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_rif\anims\an_1p_gen_rif_b_draw.smd"
 	weightlist "weights_draw"
 	hidden
 }
 
 $sequence "base_dryfire_test" predelta {
-	"F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_rif\orig\an_1p_gen_rif_b_dryfire.smd"
+	"F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_rif\anims\an_1p_gen_rif_b_dryfire.smd"
 	weightlist "weights_dryfire"
 	hidden
 }

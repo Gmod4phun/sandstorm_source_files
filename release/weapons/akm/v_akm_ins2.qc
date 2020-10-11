@@ -1177,8 +1177,8 @@ $deltasequence "seq_glsetup_in" "anims\AN_1P_AKM_B_GL_In.smd"
 $deltasequence "seq_glsetup_out" "anims\AN_1P_AKM_B_GL_Out.smd"
 $deltasequence "seq_glsetup_trigger" "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\weapons\ak74\anims\AN_1P_AK74_GLSetup_FireTrigger.smd"
 
-$deltasequence "seq_gen_rif_dryfire" "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_rif\orig\an_1p_gen_rif_b_dryfire.smd"
-$deltasequence "seq_gen_rif_iron_dryfire" "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_rif\orig\an_1p_gen_rif_b_iron_dryfire.smd"
+$deltasequence "seq_gen_rif_dryfire" "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_rif\anims\an_1p_gen_rif_b_dryfire.smd"
+$deltasequence "seq_gen_rif_iron_dryfire" "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_rif\anims\an_1p_gen_rif_b_iron_dryfire.smd"
 
 $animation "a_delta_gl_moveback" "anims\delta_gl_moveback.smd" subtract "idle" 0 frames 0 1
 // $animation "a_delta_gl_moveback" "anims\AN_1P_AKM_B_Idle.smd" subtract "idle" 0 frames 0 1

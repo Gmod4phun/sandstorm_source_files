@@ -856,22 +856,22 @@ $sequence delta_trigger delta {
 	weightlist "weights_trigger"
 }
 
-$deltasequence "seq_dep_fire_start" "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_rif\orig\an_1p_gen_rif_dep_fire.smd"
+$deltasequence "seq_dep_fire_start" "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_rif\anims\an_1p_gen_rif_dep_fire.smd"
 $deltasequence "seq_dep_fire_end" "anims\an_1p_mosin_dep_ext_fire_cycle.smd"
-$deltasequence "seq_dep_iron_fire_start" "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_rif\orig\an_1p_gen_rif_dep_iron_fire.smd"
+$deltasequence "seq_dep_iron_fire_start" "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_rif\anims\an_1p_gen_rif_dep_iron_fire.smd"
 $deltasequence "seq_base_fire_start" "anims\an_1p_mosin_b_fire.smd"
 $deltasequence "seq_base_fire_end" "anims\an_1p_mosin_b_ext_fire_cycle.smd"
 $deltasequence "seq_iron_fire_start" "anims\an_1p_mosin_b_iron_fire.smd"
 $deltasequence "seq_iron_fire_end" "anims\an_1p_mosin_b_ext_iron_fire_cycle.smd"
 
 $sequence "base_draw_test" predelta {
-	"F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_rif\orig\an_1p_gen_rif_b_draw.smd"
+	"F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_rif\anims\an_1p_gen_rif_b_draw.smd"
 	weightlist "weights_draw"
 	hidden
 }
 
 $sequence "base_dryfire_test" predelta {
-	"F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_rif\orig\an_1p_gen_rif_b_dryfire.smd"
+	"F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_rif\anims\an_1p_gen_rif_b_dryfire.smd"
 	weightlist "weights_dryfire"
 	hidden
 }

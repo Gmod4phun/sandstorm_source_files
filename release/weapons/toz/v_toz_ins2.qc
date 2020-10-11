@@ -808,9 +808,9 @@ $sequence delta_trigger delta {
 	weightlist "weights_trigger"
 }
 
-$deltasequence "seq_base_fire_start" "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_shot\orig\an_1p_gen_shot_b_fire.smd"
+$deltasequence "seq_base_fire_start" "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_shot\anims\an_1p_gen_shot_b_fire.smd"
 $deltasequenceframes "seq_base_fire_end" "anims\an_1p_toz_b_fire_cycle.smd" 20
 $deltasequenceframes "seq_base_fire_end2" "anims\an_1p_toz_b_fire_cycle2.smd" 20
-$deltasequence "seq_iron_fire_start" "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_shot\orig\an_1p_gen_shot_b_iron_fire.smd"
+$deltasequence "seq_iron_fire_start" "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_shot\anims\an_1p_gen_shot_b_iron_fire.smd"
 $deltasequenceframes "seq_iron_fire_end" "anims\an_1p_toz_b_iron_fire_cycle.smd" 20
 $deltasequenceframes "seq_iron_fire_end2" "anims\an_1p_toz_b_iron_fire_cycle2.smd" 20

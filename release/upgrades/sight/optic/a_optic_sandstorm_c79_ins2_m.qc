@@ -9,6 +9,11 @@ $bodygroup "optic"
 	studio "SKM_1P_A_S_C79_ins2.smd"
 }
 
+$bodygroup "optic_refract"
+{
+	studio "SKM_1P_A_S_C79_ins2_refract.smd"
+}
+
 $bodygroup "optic_glass"
 {
 	studio "SKM_1P_A_S_C79_ins2_glass.smd"

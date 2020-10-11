@@ -702,41 +702,41 @@ $sequence "iron_empty" {
 
 // nondefault shit
 
-$deltasequence "seq_base_fire" "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_pist\orig\an_1p_gen_pist_b_fire.smd"
-$deltasequence "seq_base_fire2" "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_pist\orig\an_1p_gen_pist_b_fire_2.smd"
-$deltasequence "seq_base_fire3" "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_pist\orig\an_1p_gen_pist_b_fire_3.smd"
+$deltasequence "seq_base_fire" "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_pist\anims\an_1p_gen_pist_b_fire.smd"
+$deltasequence "seq_base_fire2" "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_pist\anims\an_1p_gen_pist_b_fire_2.smd"
+$deltasequence "seq_base_fire3" "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_pist\anims\an_1p_gen_pist_b_fire_3.smd"
 
-$deltasequence "seq_iron_fire" "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_pist\orig\an_1p_gen_pist_b_iron_fire.smd"
-$deltasequence "seq_iron_fire2" "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_pist\orig\an_1p_gen_pist_b_iron_fire2.smd"
-$deltasequence "seq_iron_fire3" "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_pist\orig\an_1p_gen_pist_b_iron_fire3.smd"
+$deltasequence "seq_iron_fire" "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_pist\anims\an_1p_gen_pist_b_iron_fire.smd"
+$deltasequence "seq_iron_fire2" "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_pist\anims\an_1p_gen_pist_b_iron_fire2.smd"
+$deltasequence "seq_iron_fire3" "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_pist\anims\an_1p_gen_pist_b_iron_fire3.smd"
 
 
 $sequence "base_draw_test" predelta {
-	"F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_pist\orig\an_1p_gen_pist_b_draw.smd"
+	"F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_pist\anims\an_1p_gen_pist_b_draw.smd"
 	weightlist "weights_draw"
 	hidden
 }
 
 $sequence "base_holster_test" predelta {
-	"F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_pist\orig\an_1p_gen_pist_b_holster.smd"
+	"F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_pist\anims\an_1p_gen_pist_b_holster.smd"
 	weightlist "weights_holster"
 	hidden
 }
 
 $sequence "base_crawl_test" {
-	"F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_pist\orig\an_1p_gen_pist_m_crawl_n.smd"
+	"F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_pist\anims\an_1p_gen_pist_m_crawl_n.smd"
 	weightlist "weights_sprint"
 	hidden
 }
 
 $sequence "base_dryfire_test" predelta {
-	"F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_pist\orig\an_1p_gen_pist_b_dryfire.smd"
+	"F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_pist\anims\an_1p_gen_pist_b_dryfire.smd"
 	weightlist "weights_dryfire"
 	hidden
 }
 
 $sequence "base_down_test" predelta {
-	"F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_pist\orig\an_1p_gen_pist_b_down.smd"
+	"F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_pist\anims\an_1p_gen_pist_b_down.smd"
 	weightlist "weights_down"
 	hidden
 }

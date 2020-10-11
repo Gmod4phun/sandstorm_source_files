@@ -31,6 +31,7 @@ $attachment "Laser" "A_LaserFlashlight" 0 0 0 rotate 0 0 0
 $attachment "Optic" "A_Optic" 0 0 0 rotate 0 0 0
 $attachment "Foregrip" "A_Foregrip" 0 0 0 rotate 0 0 0
 $attachment "GL" "b_wpn_gl" 0 0 0 rotate 0 0 0
+$attachment "camera" "b_camera" 0 0 0 rotate 0 -90 0
 
 $bonemerge "b_root"
 $bonemerge "b_ch_middle"
@@ -1269,8 +1270,8 @@ $deltasequenceweightlist "seq_glsetup_in" "anims\AN_1P_VHS_GL_In.smd" "weights_g
 $deltasequenceweightlist "seq_glsetup_out" "anims\AN_1P_VHS_GL_Out.smd" "weights_glsetup_transition"
 $deltasequence "seq_glsetup_trigger" "anims\AN_1P_VHS_GLSetup_FireTrigger.smd"
 
-$deltasequence "seq_gen_rif_dryfire" "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_rif\orig\an_1p_gen_rif_b_dryfire.smd"
-$deltasequence "seq_gen_rif_iron_dryfire" "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_rif\orig\an_1p_gen_rif_b_iron_dryfire.smd"
+$deltasequence "seq_gen_rif_dryfire" "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_rif\anims\an_1p_gen_rif_b_dryfire.smd"
+$deltasequence "seq_gen_rif_iron_dryfire" "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_rif\anims\an_1p_gen_rif_b_iron_dryfire.smd"
 
 $deltasequence "seq_fire_1" "anims\AN_1P_VHS_B_Fire01.smd"
 $deltasequence "seq_fire_2" "anims\AN_1P_VHS_B_Fire02.smd"

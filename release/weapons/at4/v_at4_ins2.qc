@@ -16,6 +16,7 @@ $contents "solid"
 $cdmaterials "models\weapons\ins2_sandstorm\"
 
 $attachment "muzzle" "b_wpn_muzzle" 0 0 0 rotate 0 0 0
+$attachment "camera" "b_camera" 0 0 0 rotate 0 -90 0
 
 
 $bonemerge "b_root"
@@ -150,7 +151,7 @@ $include "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\sandstorm_deltas_macros.qci"
 // }
 
 $sequence "menu" {
-	"anims\AN_1P_AT4_B_Idle.smd"
+	"anims\AN_1P_AT4_B_Menu_Custom.smd"
 	activity "ACT_VM_MENU" 1
 }
 
@@ -163,7 +164,7 @@ $sequence "idle" {
 $sequence "delta_iron" delta {
 	"anims\delta_iron.smd"
 	subtract "idle" 0
-	origin 0 -2 0
+	origin 0 -1 0
 }
 
 $sequence "base_idle" {
@@ -184,8 +185,8 @@ $sequence "base_down" {
 $sequence "base_crawl" {
 	"anims\an_1p_at4_b_crawl_n.smd"
 	activity "ACT_VM_CRAWL" 1
-	// { event 5004 15 "Universal.RightCrawl" }
-	// { event 5004 38 "Universal.LeftCrawl" }
+	{ event 5004 0 "Universal.RightCrawl" }
+	{ event 5004 15 "Universal.LeftCrawl" }
 	fps 30
 	loop
 }
@@ -195,11 +196,11 @@ $animation "a_base_fire" "anims\AN_1P_AT4_B_Idle.smd" frames 0 30
 $sequence "base_fire" {
 	a_base_fire
 	activity "ACT_VM_PRIMARYATTACK" 1
-	{ event AE_MUZZLEFLASH 0 "AT4 MUZZLE" }
-	{ event RPG_EMIT_EVENT 10 "" }
-	{ event 5004 3 "Weapon_M9.safety" }
+	{ event 5004 4 "Weapon_M9.safety" }
+	{ event RPG_EMIT_EVENT 5 "" }
+	{ event AE_MUZZLEFLASH 6 "AT4 MUZZLE" }
 	addlayer "seq_at4_fire"
-	fps 30
+	fps 24
 }
 
 $animation "a_base_iron_fire" "anims\AN_1P_AT4_B_Idle.smd" frames 0 30
@@ -207,11 +208,11 @@ $animation "a_base_iron_fire" "anims\AN_1P_AT4_B_Idle.smd" frames 0 30
 $sequence "base_iron_fire" {
 	a_base_iron_fire
 	activity "ACT_VM_ISHOOT" 1
-	{ event AE_MUZZLEFLASH 0 "AT4 MUZZLE" }
-	{ event RPG_EMIT_EVENT 10 "" }
-	{ event 5004 3 "Weapon_M9.safety" }
+	{ event 5004 4 "Weapon_M9.safety" }
+	{ event RPG_EMIT_EVENT 5 "" }
+	{ event AE_MUZZLEFLASH 6 "AT4 MUZZLE" }
 	addlayer "seq_at4_iron_fire"
-	fps 30
+	fps 24
 }
 
 $animation "a_base_iron_down" "anims\AN_1P_AT4_B_Idle.smd" frames 0 1
@@ -238,15 +239,17 @@ $sequence "base_holster" {
 }
 
 $sequence "base_ready" {
-	"anims\an_1p_at4_b_draw.smd"
+	"anims\an_1p_at4_b_ready_custom.smd"
 	activity "ACT_VM_READY" 1
 	{ event 5004 0 "Universal.Draw" }
-	// { event 5004 16 "Weapon_AT4.Ready" }
-	// { event 5004 42 "Weapon_AT4.Latch_01" }
-	// { event 5004 50 "Weapon_AT4.Latch_02" }
-	// { event 5004 75 "Weapon_AT4.Shoulder" }
+	{ event 5004 16 "Weapon_AT4.Ready" }
+	{ event 5004 42 "Weapon_AT4.Latch_01" }
+	{ event 5004 50 "Weapon_AT4.Latch_02" }
+	{ event 5004 75 "Weapon_AT4.Shoulder" }
+	blendlayer "base_idle" 80 100 200 200
 	snap
 	fps 30
+	fadeout 0
 }
 
 $sequence "base_toss" {

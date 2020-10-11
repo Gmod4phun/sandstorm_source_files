@@ -744,10 +744,10 @@ $sequence "delta_handguard_railed" delta {
 	a_delta_handguard_railed
 }
 
-$deltasequence "seq_gen_rif_dryfire" "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_rif\orig\an_1p_gen_rif_b_dryfire.smd"
-$deltasequence "seq_gen_rif_iron_dryfire" "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_rif\orig\an_1p_gen_rif_b_iron_dryfire.smd"
+$deltasequence "seq_gen_rif_dryfire" "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_rif\anims\an_1p_gen_rif_b_dryfire.smd"
+$deltasequence "seq_gen_rif_iron_dryfire" "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_rif\anims\an_1p_gen_rif_b_iron_dryfire.smd"
 
-$deltasequence "seq_gen_rif_dep_fire" "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_rif_fix\anims\AN_1P_GEN_RIF_DEP_Fire.smd"
+$deltasequence "seq_gen_rif_dep_fire" "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_rif\anims\AN_1P_GEN_RIF_DEP_Fire.smd"
 
-$deltasequence "seq_gen_rif_dep_iron_fire1" "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_rif_fix\anims\AN_1P_GEN_RIF_DEP_IRON_Fire.smd"
-$deltasequence "seq_gen_rif_dep_iron_fire2" "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_rif_fix\anims\AN_1P_GEN_RIF_DEP_IRON_Fire2.smd"
+$deltasequence "seq_gen_rif_dep_iron_fire1" "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_rif\anims\AN_1P_GEN_RIF_DEP_IRON_Fire.smd"
+$deltasequence "seq_gen_rif_dep_iron_fire2" "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_rif\anims\AN_1P_GEN_RIF_DEP_IRON_Fire2.smd"
