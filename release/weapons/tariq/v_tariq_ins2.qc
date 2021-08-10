@@ -6,7 +6,7 @@ $modelname "weapons\v_makarov.mdl"
 
 $bodygroup "Weapon"
 {
-	studio "SKM_1P_Tariq_Smoothfix.smd"
+	studio "SKM_1P_Tariq_GLTF.smd"
 }
 
 $bodygroup "Belt"
@@ -15,11 +15,6 @@ $bodygroup "Belt"
 	studio "SKM_1P_Tariq_Bullets_1.smd"
 	studio "SKM_1P_Tariq_Bullets_2.smd"
 	studio "SKM_1P_Tariq_Bullets_3.smd"
-}
-
-$bodygroup "Grip"
-{
-	studio "SKM_1P_Tariq_Grip_Fixed.smd"
 }
 
 

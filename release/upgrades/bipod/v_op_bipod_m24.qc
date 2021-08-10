@@ -1,0 +1,23 @@
+// Created by Crowbar 0.55
+
+$modelname "weapons\op_m24\v_op_bipod_m24.mdl"
+
+$include "..\..\..\unreal_scale.qci"
+
+$bodygroup "bipod"
+{
+	studio "SKM_1P_A_Bipod_Harris.smd"
+}
+
+$surfaceprop "default"
+$contents "solid"
+
+$illumposition 0 0 0 //$illumposition 0 6 0 //$illumposition 0 0 0 //$illumposition 0.02 -6.377 0.703
+
+$cdmaterials "models\weapons\upgrades\"
+$cdmaterials "models\weapons\op_m24\"
+
+$sequence "standard_idle" {
+	"SKM_1P_A_Bipod_Harris.smd"
+}
+

@@ -1,6 +1,6 @@
 // Created by Crowbar 0.55
 
-$include "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\unreal_scale.qci"
+$include "..\..\..\unreal_scale.qci"
 
 $modelname "weapons\v_m45.mdl"
 
@@ -113,10 +113,10 @@ $bbox -20.432 -2.695 -25.946 11.584 8.836 2.803
 
 $include "v_m1911_bones.qci"
 
-$include "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\ins2_bones_follow_sandstorm.qci"
-$include "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\ins2_attachment_bones.qci"
+$include "..\..\..\ins2_bones_follow_sandstorm.qci"
+$include "..\..\..\ins2_attachment_bones.qci"
 
-$include "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\sandstorm_deltas_macros.qci"
+$include "..\..\..\sandstorm_deltas_macros.qci"
 
 $definebone "A_Suppressor" "b_wpn_barrel" 0 -4.435 0.605 0 180 0 0 0 0 0 0 0
 $bonemerge "A_Suppressor"
@@ -429,16 +429,6 @@ $sequence "base_idle" {
 	loop
 }
 
-// $sequence "base_ready" {
-	// "anims\an_1p_m1911_b_ready_shortened.smd"
-	// activity "ACT_VM_READY" 1
-	// { event 5004 0 "Universal.PistolDraw" }
-	// { event 5004 23 "Weapon_M45.Boltback" }
-	// { event 5004 33 "Weapon_M45.Boltrelease" }
-	// fps 45
-	// snap
-// }
-
 $sequence "base_ready" {
 	"anims\an_1p_m1911_b_ready.smd"
 	activity "ACT_VM_READY" 1
@@ -562,7 +552,7 @@ $sequence "base_reload" {
 
 $sequence "base_reloadempty" {
 	"anims\an_1p_m1911_b_reload_empty_speed.smd"
-	activity "ACT_VM_RELOADEMPTY" 1	
+	activity "ACT_VM_RELOADEMPTY" 2
 	{ event 5004 10 "Weapon_M45.Magrelease" }
 	{ event 5004 15 "Weapon_M45.Magout" }
 	{ event 5004 45 "Weapon_M45.Magin" }
@@ -730,41 +720,41 @@ $sequence "iron_empty" {
 
 // nondefault shit
 
-$deltasequence "seq_base_fire" "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_pist\anims\an_1p_gen_pist_b_fire.smd"
-$deltasequence "seq_base_fire2" "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_pist\anims\an_1p_gen_pist_b_fire_2.smd"
-$deltasequence "seq_base_fire3" "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_pist\anims\an_1p_gen_pist_b_fire_3.smd"
+$deltasequence "seq_base_fire" "..\..\animations\gen_pist\anims\an_1p_gen_pist_b_fire.smd"
+$deltasequence "seq_base_fire2" "..\..\animations\gen_pist\anims\an_1p_gen_pist_b_fire_2.smd"
+$deltasequence "seq_base_fire3" "..\..\animations\gen_pist\anims\an_1p_gen_pist_b_fire_3.smd"
 
-$deltasequence "seq_iron_fire" "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_pist\anims\an_1p_gen_pist_b_iron_fire.smd"
-$deltasequence "seq_iron_fire2" "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_pist\anims\an_1p_gen_pist_b_iron_fire2.smd"
-$deltasequence "seq_iron_fire3" "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_pist\anims\an_1p_gen_pist_b_iron_fire3.smd"
+$deltasequence "seq_iron_fire" "..\..\animations\gen_pist\anims\an_1p_gen_pist_b_iron_fire.smd"
+$deltasequence "seq_iron_fire2" "..\..\animations\gen_pist\anims\an_1p_gen_pist_b_iron_fire2.smd"
+$deltasequence "seq_iron_fire3" "..\..\animations\gen_pist\anims\an_1p_gen_pist_b_iron_fire3.smd"
 
 
 $sequence "base_draw_test" predelta {
-	"F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_pist\anims\an_1p_gen_pist_b_draw.smd"
+	"..\..\animations\gen_pist\anims\an_1p_gen_pist_b_draw.smd"
 	weightlist "weights_draw"
 	hidden
 }
 
 $sequence "base_holster_test" predelta {
-	"F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_pist\anims\an_1p_gen_pist_b_holster.smd"
+	"..\..\animations\gen_pist\anims\an_1p_gen_pist_b_holster.smd"
 	weightlist "weights_holster"
 	hidden
 }
 
 $sequence "base_crawl_test" {
-	"F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_pist\anims\an_1p_gen_pist_m_crawl_n.smd"
+	"..\..\animations\gen_pist\anims\an_1p_gen_pist_m_crawl_n.smd"
 	weightlist "weights_sprint"
 	hidden
 }
 
 $sequence "base_dryfire_test" predelta {
-	"F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_pist\anims\an_1p_gen_pist_b_dryfire.smd"
+	"..\..\animations\gen_pist\anims\an_1p_gen_pist_b_dryfire.smd"
 	weightlist "weights_dryfire"
 	hidden
 }
 
 $sequence "base_down_test" predelta {
-	"F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_pist\anims\an_1p_gen_pist_b_down.smd"
+	"..\..\animations\gen_pist\anims\an_1p_gen_pist_b_down.smd"
 	weightlist "weights_down"
 	hidden
 }
@@ -784,4 +774,18 @@ $sequence "delta_slideback" delta {
 $sequence delta_trigger delta {
 	"anims\an_1p_m1911_b_fire_trigger.smd"
 	weightlist "weights_trigger"
+}
+
+// secret
+
+$sequence "base_reloadempty_rare" {
+	"anims\an_1p_m1911_b_reload_empty_rare.smd"
+	activity "ACT_VM_RELOADEMPTY" 1
+	{ event 5004 10 "Weapon_M45.Magrelease" }
+	{ event 5004 15 "Weapon_M45.Magout" }
+	{ event 5004 53 "Weapon_M45.Magin" }
+	{ event 5004 58 "Weapon_M45.MagHit" }
+	{ event 46 65 "" }
+	{ event 5004 80 "Weapon_M45.Boltrelease" }
+	fps 36
 }

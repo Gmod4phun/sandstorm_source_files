@@ -49,9 +49,9 @@ $include "..\..\..\ins2_bones_follow_sandstorm.qci"
 $definebone "A_Optic" "b_wpn_optic" 0 0.5 0 0 180 -90 0 0 0 0 0 0
 $bonemerge "A_Optic"
 
-$include "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\ins2_attachment_bones_nooptic.qci"
+$include "..\..\..\ins2_attachment_bones_nooptic.qci"
 
-$include "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\sandstorm_deltas_macros.qci"
+$include "..\..\..\sandstorm_deltas_macros.qci"
 
 
 // IK - inverse kinematics - needed for all sort of anims - makes the hands follow the gun
@@ -161,6 +161,8 @@ $weightlist "weights_cycle" {
 	"b_ch_l_clavical" 0
 	"b_ch_r_upperarm" 1
 	"b_ch_l_upperarm" 1
+	"b_ch_r_hand" 0
+	"b_ch_l_hand" 0
 	"b_ch_r_finger_00" 0
 	"b_ch_r_finger_10" 0
 	"b_ch_r_finger_20" 0

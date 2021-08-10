@@ -1,0 +1,1753 @@
+// Created by Crowbar 0.55
+
+$include "..\..\..\unreal_scale.qci"
+
+$modelname "weapons\v_m4a1.mdl"
+
+$bodygroup "Weapon"
+{
+	studio "SKM_1P_AUG_Edit.smd"
+}
+
+$bodygroup "Belt"
+{
+	studio "..\..\upgrades\magazine\aug\SKM_1P_AUG_Magazine_30_Bullets_0.smd"
+	studio "..\..\upgrades\magazine\aug\SKM_1P_AUG_Magazine_30_Bullets_1.smd"
+	studio "..\..\upgrades\magazine\aug\SKM_1P_AUG_Magazine_30_Bullets_2.smd"
+	studio "..\..\upgrades\magazine\aug\SKM_1P_AUG_Magazine_30_Bullets_3.smd"
+	studio "..\..\upgrades\magazine\aug\SKM_1P_AUG_Magazine_30_Bullets_4.smd"
+	studio "..\..\upgrades\magazine\aug\SKM_1P_AUG_Magazine_30_Bullets_5.smd"
+	studio "..\..\upgrades\magazine\aug\SKM_1P_AUG_Magazine_30_Bullets_6.smd"
+	studio "..\..\upgrades\magazine\aug\SKM_1P_AUG_Magazine_30_Bullets_7.smd"
+	studio "..\..\upgrades\magazine\aug\SKM_1P_AUG_Magazine_30_Bullets_8.smd"
+	studio "..\..\upgrades\magazine\aug\SKM_1P_AUG_Magazine_30_Bullets_9.smd"
+	studio "..\..\upgrades\magazine\aug\SKM_1P_AUG_Magazine_30_Bullets_10.smd"
+	studio "..\..\upgrades\magazine\aug\SKM_1P_AUG_Magazine_30_Bullets_11.smd"
+	studio "..\..\upgrades\magazine\aug\SKM_1P_AUG_Magazine_30_Bullets_12.smd"
+	studio "..\..\upgrades\magazine\aug\SKM_1P_AUG_Magazine_30_Bullets_13.smd"
+	studio "..\..\upgrades\magazine\aug\SKM_1P_AUG_Magazine_30_Bullets_14.smd"
+	studio "..\..\upgrades\magazine\aug\SKM_1P_AUG_Magazine_30_Bullets_15.smd"
+	studio "..\..\upgrades\magazine\aug\SKM_1P_AUG_Magazine_30_Bullets_16.smd"
+	studio "..\..\upgrades\magazine\aug\SKM_1P_AUG_Magazine_30_Bullets_17.smd"
+	studio "..\..\upgrades\magazine\aug\SKM_1P_AUG_Magazine_30_Bullets_18.smd"
+	studio "..\..\upgrades\magazine\aug\SKM_1P_AUG_Magazine_30_Bullets_19.smd"
+	studio "..\..\upgrades\magazine\aug\SKM_1P_AUG_Magazine_30_Bullets_20.smd"
+	studio "..\..\upgrades\magazine\aug\SKM_1P_AUG_Magazine_30_Bullets_21.smd"
+	studio "..\..\upgrades\magazine\aug\SKM_1P_AUG_Magazine_30_Bullets_22.smd"
+	studio "..\..\upgrades\magazine\aug\SKM_1P_AUG_Magazine_30_Bullets_23.smd"
+	studio "..\..\upgrades\magazine\aug\SKM_1P_AUG_Magazine_30_Bullets_24.smd"
+	studio "..\..\upgrades\magazine\aug\SKM_1P_AUG_Magazine_30_Bullets_25.smd"
+	studio "..\..\upgrades\magazine\aug\SKM_1P_AUG_Magazine_30_Bullets_26.smd"
+	studio "..\..\upgrades\magazine\aug\SKM_1P_AUG_Magazine_30_Bullets_27.smd"
+	studio "..\..\upgrades\magazine\aug\SKM_1P_AUG_Magazine_30_Bullets_28.smd"
+	studio "..\..\upgrades\magazine\aug\SKM_1P_AUG_Magazine_30_Bullets_29.smd"
+	studio "..\..\upgrades\magazine\aug\SKM_1P_AUG_Magazine_30_Bullets_30.smd"
+}
+
+$bodygroup "muzzle"
+{
+	studio "..\..\upgrades\fallback\aug\SKM_1P_A_FB_AUG_Muzzle.smd"
+}
+
+$bodygroup "rail_optic"
+{
+	studio "..\..\upgrades\accessories\aug\SKM_1P_A_AUG_OpticRail.smd"
+}
+
+
+
+$surfaceprop "default"
+$contents "solid"
+
+$illumposition 0 0 0
+
+$cdmaterials "models\weapons\ins2_sandstorm\"
+
+$attachment "muzzle" "b_wpn_muzzle" 0 0 0 rotate 0 0 0
+$attachment "muzzle_gl" "b_wpn_gl_muzzle" 0 0 0 rotate 0 0 0
+$attachment "muzzle_supp" "b_wpn_muzzle" 15.5 0 0 rotate 0 0 0
+$attachment "shell" "b_wpn_eject" 0 0 0 rotate 0 0 0
+$attachment "shell_40mm" "b_wpn_gl_casing" 0 0 0 rotate 0 0 0
+// $attachment "muzzle_ads" "A_Muzzle_Ironsight" 0 0 0 rotate 0 0 0
+$attachment "Suppressor" "A_Suppressor" 0 0 0 rotate 0 0 0
+$attachment "Laser" "A_LaserFlashlight" 0 0 0 rotate 0 0 0
+$attachment "Optic" "A_Optic" 0 0 0 rotate 0 0 0
+$attachment "Foregrip" "A_Foregrip" 0 0 0 rotate 0 0 0
+$attachment "GL" "b_wpn_gl" 0 0 0 rotate 0 0 0
+$attachment "camera" "b_camera" 0 0 0 rotate 0 -90 0
+
+$bonemerge "b_root"
+$bonemerge "b_ch_middle"
+$bonemerge "b_ch_spine1"
+$bonemerge "b_ch_spine2"
+$bonemerge "b_ch_l_clavical"
+$bonemerge "b_ch_l_upperarm"
+$bonemerge "b_ch_l_forearm"
+$bonemerge "b_ch_l_forearm_twist1"
+$bonemerge "b_ch_l_forearm_twist2"
+$bonemerge "b_ch_l_forearm_twist3"
+$bonemerge "b_ch_l_forearm_twist4"
+$bonemerge "b_ch_l_forearm_twist5"
+$bonemerge "b_ch_l_forearm_twist6"
+$bonemerge "b_ch_l_forearm_twist7"
+$bonemerge "b_ch_l_hand"
+$bonemerge "b_ch_l_finger_00"
+$bonemerge "b_ch_l_finger_01"
+$bonemerge "b_ch_l_finger_02"
+$bonemerge "b_ch_l_finger_40"
+$bonemerge "b_ch_l_finger_41"
+$bonemerge "b_ch_l_finger_42"
+$bonemerge "b_ch_l_finger_20"
+$bonemerge "b_ch_l_finger_21"
+$bonemerge "b_ch_l_finger_22"
+$bonemerge "b_ch_l_finger_30"
+$bonemerge "b_ch_l_finger_31"
+$bonemerge "b_ch_l_finger_32"
+$bonemerge "b_ch_l_finger_10"
+$bonemerge "b_ch_l_finger_11"
+$bonemerge "b_ch_l_finger_12"
+$bonemerge "b_ch_r_clavical"
+$bonemerge "b_ch_r_upperarm"
+$bonemerge "b_ch_r_forearm"
+$bonemerge "b_ch_r_forearm_twist1"
+$bonemerge "b_ch_r_forearm_twist2"
+$bonemerge "b_ch_r_forearm_twist3"
+$bonemerge "b_ch_r_forearm_twist4"
+$bonemerge "b_ch_r_forearm_twist5"
+$bonemerge "b_ch_r_forearm_twist6"
+$bonemerge "b_ch_r_forearm_twist7"
+$bonemerge "b_ch_r_hand"
+$bonemerge "b_ch_r_finger_00"
+$bonemerge "b_ch_r_finger_01"
+$bonemerge "b_ch_r_finger_02"
+$bonemerge "b_ch_r_finger_10"
+$bonemerge "b_ch_r_finger_11"
+$bonemerge "b_ch_r_finger_12"
+$bonemerge "b_ch_r_finger_20"
+$bonemerge "b_ch_r_finger_21"
+$bonemerge "b_ch_r_finger_22"
+$bonemerge "b_ch_r_finger_30"
+$bonemerge "b_ch_r_finger_31"
+$bonemerge "b_ch_r_finger_32"
+$bonemerge "b_ch_r_finger_40"
+$bonemerge "b_ch_r_finger_41"
+$bonemerge "b_ch_r_finger_42"
+$bonemerge "b_camera"
+$bonemerge "ik_hand_root"
+$bonemerge "ik_hand_r"
+$bonemerge "ik_hand_l"
+$bonemerge "b_wpn"
+$bonemerge "b_wpn_bolt"
+$bonemerge "b_wpn_fireselect"
+$bonemerge "b_wpn_foregrip"
+$bonemerge "b_wpn_gl"
+$bonemerge "b_wpn_gl_slide"
+$bonemerge "b_wpn_gl_trigger"
+$bonemerge "b_wpn_gl_round"
+$bonemerge "b_wpn_gl_casing"
+$bonemerge "b_wpn_gl_slidelock"
+$bonemerge "b_wpn_gl_sight_back"
+$bonemerge "b_wpn_gl_sight_front"
+$bonemerge "b_wpn_magrelease"
+$bonemerge "b_wpn_optic"
+$bonemerge "b_wpn_ring"
+$bonemerge "b_wpn_spec_1"
+$bonemerge "b_wpn_spec_2"
+$bonemerge "b_wpn_trigger"
+$bonemerge "ik_hand_wpn_l"
+$bonemerge "ik_hand_wpn_r"
+$bonemerge "b_wpn_mag"
+$bonemerge "b_wpn_chargehandle"
+
+
+
+$include "v_aug_bones.qci"
+
+$definebone "b_wpn_eject" "b_wpn" -0.5 4.25 1.05 -15 180 0 0 0 0 0 0 0
+$bonemerge "b_wpn_eject"
+
+$definebone "b_wpn_muzzle" "b_wpn" 0 -13.5 0.62 0 -90 0 0 0 0 0 0 0
+$bonemerge "b_wpn_muzzle"
+
+// $definebone "b_wpn_optic" "b_wpn" 0 -1 4.56 0 0 0 0 0 0 0 0 0
+// $bonemerge "b_wpn_optic"
+
+$definebone "a_underbarrel" "b_wpn" 0 64 0 90 0 0 0 0 0 0 0 0
+$bonemerge "a_underbarrel"
+
+$definebone "a_foregrip" "b_wpn_foregrip" 0 0 0.1 0 180 0 0 0 0 0 0 0
+$bonemerge "a_foregrip"
+
+$definebone "a_suppressor" "b_wpn" 0 -12.5 0.9 0 180 0 0 0 0 0 0 0
+$bonemerge "a_suppressor"
+
+$definebone "a_laserflashlight" "b_wpn" -0.93 -4.05 0.93 0 -90 130 0 0 0 0 0 0
+$bonemerge "a_laserflashlight"
+
+$definebone "b_wpn_gl_muzzle" "b_wpn_gl" 3.8 -3.35 0 0 0 -90 0 0 0 0 0 0
+$bonemerge "b_wpn_gl_muzzle"
+
+$definebone "A_GL" "b_wpn" 0 128 0 0 0 0 0 0 0 0 0 0
+$bonemerge "A_GL"
+
+$definebone "A_Optic" "b_wpn_optic" 0 0 0 0 180 -90 0 0 0 0 0 0
+$bonemerge "A_Optic"
+
+$include "..\..\..\ins2_bones_follow_sandstorm.qci"
+// $include "..\..\..\ins2_attachment_bones_nooptic.qci"
+
+// $include "..\..\..\sandstorm_deltas_macros.qci"
+
+
+// IK - inverse kinematics - needed for all sort of anims - makes the hands follow the gun
+$include "..\..\..\sandstorm_hand_ik.qci"
+
+$weightlist "weights_foregrip" {
+	"b_root" 0
+	"b_wpn" 0
+	"b_ch_r_clavical" 0
+	"b_ch_l_clavical" 1
+}
+
+$weightlist "weights_boltback" {
+	"b_root" 0
+	"b_wpn" 0
+	"b_wpn_bolt" 1
+	"b_wpn_chargehandle" 0
+	"A_Suppressor" 0
+	"A_LaserFlashlight" 0
+}
+
+$weightlist "weights_trigger" {
+	"b_root" 0
+	"b_wpn" 0
+	"b_wpn_trigger" 1
+	"b_ch_r_finger_10" 1
+	"b_ch_r_finger_11" 0
+	"b_ch_r_finger_12" 0
+	"A_Suppressor" 0
+	"A_LaserFlashlight" 0
+}
+
+$weightlist "weights_wpnonly" {
+	"b_root" 0
+	"b_wpn" 1
+	"b_wpn_bolt" 0
+	// "b_wpn_sliderelease" 0
+	"b_wpn_eject" 0
+	"b_wpn_fireselect" 0
+	"b_wpn_magrelease" 0
+	"b_wpn_muzzle" 0
+	"b_wpn_spec_1" 0
+	"b_wpn_spec_2" 0
+	"b_wpn_ring" 0
+	"b_wpn_trigger" 0
+	"ik_hand_wpn_l" 0
+	"ik_hand_wpn_r" 0
+	// "b_wpn_stock" 0
+	"b_wpn_chargehandle" 0
+	"b_wpn_mag" 0
+	// "b_wpn_mag_b1" 0
+	// "b_wpn_mag_b2" 0
+	// "b_wpn_mag_follow" 0
+	"A_Suppressor" 0
+	"A_LaserFlashlight" 0
+	"A_Foregrip" 0
+	"A_Optic" 0
+	// "A_Modkit" 0
+	// "b_wpn_bipod" 0
+	// "b_wpn_bipod_base" 0
+	"b_wpn_optic" 0
+	"b_wpn_foregrip" 0
+	"b_camera" 1
+	"b_wpn_gl" 0
+	"b_wpn_gl_round" 0
+}
+
+$weightlist "weights_delta_wpn_arms" {
+	"b_root" 1
+	"b_wpn" 1
+	"b_ch_l_finger_00" 0
+	"b_ch_l_finger_10" 0
+	"b_ch_l_finger_20" 0
+	"b_ch_l_finger_30" 0
+	"b_ch_l_finger_40" 0
+	"b_ch_r_finger_00" 0
+	"b_ch_r_finger_10" 0
+	"b_ch_r_finger_20" 0
+	"b_ch_r_finger_30" 0
+	"b_ch_r_finger_40" 0
+	"b_camera" 1
+	"b_wpn_optic" 0
+	"b_wpn_muzzle" 0
+	"b_wpn_gl" 0
+}
+
+$weightlist "weights_boltrelease" {
+	"b_root" 0
+	// "b_ch_middle" 1
+	"b_wpn" 1
+	"b_wpn_bolt" 1
+	// "b_wpn_sliderelease" 1
+	"b_wpn_eject" 0
+	"b_wpn_fireselect" 0
+	"b_wpn_magrelease" 0
+	"b_wpn_muzzle" 0
+	"b_wpn_spec_1" 0
+	"b_wpn_spec_2" 0
+	"b_wpn_ring" 0
+	"b_wpn_trigger" 0
+	"ik_hand_wpn_l" 0
+	"ik_hand_wpn_r" 0
+	// "b_wpn_stock" 0
+	"b_wpn_chargehandle" 1
+	"b_wpn_mag" 0
+	// "b_wpn_mag_b1" 0
+	// "b_wpn_mag_b2" 0
+	// "b_wpn_mag_follow" 0
+	"A_Suppressor" 0
+	"A_LaserFlashlight" 0
+	"A_Foregrip" 0
+	"A_Optic" 0
+	// "A_Modkit" 0
+	// "b_wpn_bipod" 0
+	// "b_wpn_bipod_base" 0
+	"b_wpn_optic" 0
+	"b_wpn_foregrip" 0
+	"b_ch_r_clavical" 1
+	"b_ch_l_clavical" 1
+	"b_ch_r_upperarm" 1
+	"b_ch_l_upperarm" 1
+	"b_ch_r_finger_00" 0
+	"b_ch_r_finger_10" 0
+	"b_ch_r_finger_20" 0
+	"b_ch_r_finger_30" 0
+	"b_ch_r_finger_40" 0
+	// "b_ch_l_finger_00" 1
+	// "b_ch_l_finger_10" 1
+	// "b_ch_l_finger_20" 1
+	// "b_ch_l_finger_30" 1
+	// "b_ch_l_finger_40" 1
+	// "b_ch_l_finger_01" 0
+	// "b_ch_l_finger_11" 0
+	// "b_ch_l_finger_21" 0
+	// "b_ch_l_finger_31" 0
+	// "b_ch_l_finger_41" 0
+	"b_camera" 1
+	"b_wpn_gl" 0
+	"b_wpn_gl_round" 0
+}
+
+$weightlist "weights_r_upperarm" {
+	"b_root" 0
+	"b_wpn" 0
+	"b_ch_r_upperarm" 1
+	"b_ch_r_forearm" 0
+	"b_ch_l_upperarm" 0
+	"b_ch_l_forearm" 0
+}
+
+$weightlist "weights_l_upperarm" {
+	"b_root" 0
+	"b_wpn" 0
+	"b_ch_r_upperarm" 0
+	"b_ch_r_forearm" 0
+	"b_ch_l_upperarm" 1
+	"b_ch_l_forearm" 0
+}
+
+$weightlist "weights_glsetup_rhand" {
+	"b_root" 0
+	"b_wpn" 1
+	"b_wpn_gl" 0
+	"b_ch_r_clavical" 1
+	"b_ch_l_clavical" 0
+}
+
+$weightlist "weights_glsetup_lhand" {
+	"b_root" 0
+	"b_wpn" 0
+	"b_wpn_gl" 0
+	"b_ch_r_clavical" 0
+	"b_ch_l_clavical" 1
+}
+
+$weightlist "weights_glsetup_trigger" {
+	"b_root" 0
+	"b_wpn" 0
+	"b_ch_r_finger_20" 1
+	"A_Suppressor" 0
+	"A_LaserFlashlight" 0
+}
+
+$weightlist "weights_gl_moveback" {
+	"b_root" 0
+	"b_wpn" 0
+	"b_wpn_gl" 1
+	"b_wpn_gl_round" 0
+}
+
+
+$weightlist "weights_wpnonly_down" {
+	"b_root" 0
+	"b_wpn" 1
+	"b_wpn_bolt" 0
+	// "b_wpn_sliderelease" 0
+	"b_wpn_eject" 0
+	"b_wpn_fireselect" 0
+	"b_wpn_magrelease" 0
+	"b_wpn_muzzle" 0
+	"b_wpn_spec_1" 0
+	"b_wpn_spec_2" 0
+	"b_wpn_ring" 0
+	"b_wpn_trigger" 0
+	"ik_hand_wpn_l" 0
+	"ik_hand_wpn_r" 0
+	// "b_wpn_stock" 0
+	"b_wpn_chargehandle" 0
+	"b_wpn_mag" 0
+	// "b_wpn_mag_b1" 0
+	// "b_wpn_mag_b2" 0
+	// "b_wpn_mag_follow" 0
+	"A_Suppressor" 0
+	"A_LaserFlashlight" 0
+	"A_Foregrip" 0
+	"A_Optic" 0
+	// "A_Modkit" 0
+	// "b_wpn_bipod" 0
+	// "b_wpn_bipod_base" 0
+	"b_wpn_optic" 0
+	"b_wpn_foregrip" 0
+	"b_camera" 1
+	"b_wpn_gl" 0
+	"b_wpn_gl_round" 0
+	"b_ch_r_forearm_twist1" 1
+	"b_ch_r_forearm_twist2" 1
+	"b_ch_r_forearm_twist3" 1
+	"b_ch_r_forearm_twist4" 1
+	"b_ch_r_forearm_twist5" 1
+	"b_ch_r_forearm_twist6" 1
+	"b_ch_r_forearm_twist7" 1
+}
+
+
+// sequences
+
+$definemacro macro_idlesequence \\
+"anims\AN_1P_AUG_B_Idle.smd"
+
+$sequence "menu" {
+	$macro_idlesequence
+	activity "ACT_VM_MENU" 1
+	origin -2.5 -8 -3.5
+}
+
+$sequence "idle" {
+	$macro_idlesequence
+}
+
+$sequence "glsetup" {
+	"anims\AN_1P_AUG_GLSetup_Idle.smd"
+}
+
+$animation a_delta_foregrip "anims\AN_1P_AUG_G_FG_Recoil.smd" frames 0 0 subtract idle 0
+
+$sequence delta_foregrip delta {
+	a_delta_foregrip
+	weightlist "weights_foregrip"
+	ikrule lhand touch "b_wpn" usesource
+}
+
+$animation a_delta_iron "anims\delta_iron.smd" subtract idle 0
+$sequence delta_iron delta a_delta_iron
+
+$animation a_delta_eotech "anims\optic_base.smd" frames 0 0 subtract idle 0 origin 0 -1.5 1.44
+$sequence delta_eotech delta a_delta_eotech
+
+$animation a_delta_kobra "anims\optic_base.smd" frames 0 0 subtract idle 0 origin 0 -1.5 1.54
+$sequence delta_kobra delta a_delta_kobra
+
+$animation a_delta_aimp "anims\optic_base.smd" frames 0 0 subtract idle 0 origin 0 -1.5 1.44
+$sequence delta_aimp delta a_delta_aimp
+
+$animation a_delta_aimp2x "anims\optic_base.smd" frames 0 0 subtract idle 0 origin 0 -2.5 1.44
+$sequence delta_aimp2x delta a_delta_aimp2x
+
+$animation a_delta_elcan "anims\optic_base.smd" frames 0 0 subtract idle 0 origin 0 -2.5 1.47
+$sequence delta_elcan delta a_delta_elcan
+
+$animation a_delta_po "anims\optic_base.smd" frames 0 0 subtract idle 0 origin 0.0696 -3 1.26
+$sequence delta_po delta a_delta_po
+
+$animation a_delta_scope "anims\optic_base.smd" frames 0 0 subtract idle 0 origin 0 -4 1.27
+$sequence delta_scope delta a_delta_scope
+
+$animation a_idle_gl "anims\AN_1P_AUG_GL_Idle.smd" frames 0 0 subtract idle 0
+
+$sequence delta_gl delta {
+	a_idle_gl
+	weightlist "weights_foregrip"
+	ikrule lhand touch "b_wpn" usesource
+	addlayer "delta_gl_moveforward"
+}
+
+$animation a_idle_glsetup "anims\AN_1P_AUG_GLSetup_Idle.smd" frames 0 0 subtract idle 0
+
+$sequence delta_glsetup delta {
+	a_idle_glsetup
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
+	addlayer "delta_gl_moveforward"
+}
+
+$animation a_delta_glsetup_iron "anims\delta_glsetup_iron.smd" frames 0 0 subtract glsetup 0
+
+$sequence delta_glsetup_iron delta {
+	a_delta_glsetup_iron
+	// ikrule rhand touch "b_wpn" usesource
+	// ikrule lhand touch "b_wpn" usesource
+	addlayer "delta_fix_rotate_weapon"
+}
+
+$sequence "base_idle" {
+	$macro_idlesequence
+	activity "ACT_VM_IDLE" 1
+	loop
+	// ikrule rhand touch "b_wpn" usesource
+	// dont blend left hand, otherwise foregrip/gl deltas act strange when transitioning to idle, dont even blend right hand
+}
+
+$sequence "base_ready" {
+	$macro_idlesequence
+	activity "ACT_VM_READY" 1
+	{ event 5004 0 "Universal.Draw" }
+	{ event 5004 18 "Weapon_M4A1.Boltrelease" }
+	{ event 5004 40 "Universal.LeanIn" }
+	blendlayer "delta_idle_offset_ready" -1 -1 0 20 spline
+	blendlayer "delta_ik_boltrelease" 0 0 70 70
+	frames 0 70
+	fps 32
+	snap
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
+}
+
+$sequence "base_draw" {
+	$macro_idlesequence
+	activity "ACT_VM_DRAW" 1
+	{ event 5004 0 "Universal.Draw" }
+	addlayer "delta_ik_draw"
+	frames 0 41
+	fps 34
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
+}
+
+$sequence "base_holster" {
+	$macro_idlesequence
+	activity "ACT_VM_HOLSTER" 1
+	{ event 5004 0 "Universal.Holster" }
+	addlayer "delta_ik_holster"
+	frames 0 20
+	fps 34
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
+}
+
+$sequence "base_crawl" {
+	$macro_idlesequence
+	activity "ACT_VM_CRAWL" 1
+	{ event 5004 0 "Universal.LeftCrawl" }
+	{ event 5004 22 "Universal.RightCrawl" }
+	addlayer "delta_ik_crawl"
+	// addlayer "delta_idle_offset_back"
+	loop
+	frames 0 51
+	fps 30
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
+}
+
+$sequence "base_down" {
+	$macro_idlesequence
+	activity "ACT_VM_DOWN" 1
+	addlayer "delta_ik_down"
+	loop
+	frames 0 1
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
+}
+
+$sequence "base_fire" {
+	$macro_idlesequence
+	activity "ACT_VM_PRIMARYATTACK" 1
+	{ event AE_MUZZLEFLASH 0 "" }
+	{ event AE_CL_CREATE_PARTICLE_BRASS 2 "" }
+	blendlayer "delta_trigger" 0 1 10 10
+	blendlayer "delta_boltback" 1 1 10 10 noblend
+	snap
+	addlayer "delta_ik_fire_1"
+	frames 0 41
+	fps 40
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
+}
+
+$sequence "base_dryfire" {
+	$macro_idlesequence
+	activity "ACT_VM_DRYFIRE" 1
+	{ event 5004 0 "Weapon_M4A1.Empty" }
+	blendlayer "delta_trigger" 0 1 10 10
+	snap
+	addlayer "delta_ik_dryfire"
+	frames 0 21
+	fps 40
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
+}
+
+$sequence "base_fireselect" {
+	"anims\AN_1P_AUG_B_FireSelect.smd"
+	activity "ACT_VM_FIREMODE" 1
+	{ event 5004 11 "Weapon_M4A1.ROF" }
+	snap
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
+}
+
+$sequence "base_reload" {
+	"anims\AN_1P_AUG_B_Reload.smd"
+	activity "ACT_VM_RELOAD" 1
+	{ event 5004 32 "Weapon_M4A1.Magrelease" }
+	{ event 5004 42 "Weapon_M4A1.Magout" }
+	{ event 46 75 "" }
+	{ event 5004 100 "Weapon_M4A1.Magin" }
+	{ event 5004 104 "Weapon_M4A1.Hit" }
+	fps 36
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
+}
+
+$sequence "base_reloadempty" {
+	"anims\AN_1P_AUG_B_Reload_Empty_Speed.smd"
+	activity "ACT_VM_RELOADEMPTY" 1
+	{ event 5004 16 "Weapon_M4A1.Magrelease" }
+	{ event 5004 19 "Weapon_M4A1.Magout" }
+	{ event 5004 38 "Universal.Draw" }
+	{ event 46 42 "" }
+	{ event 5004 75 "Weapon_M4A1.Magin" }
+	{ event 5004 80 "Weapon_M4A1.Hit" }
+	{ event 5004 112 "Weapon_M4A1.Boltback" }
+	{ event 5004 118 "Weapon_M4A1.Boltrelease" }
+	fps 34
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
+}
+
+$sequence "base_sprint" {
+	$macro_idlesequence
+	activity "ACT_VM_SPRINT" 1
+	addlayer "delta_ik_sprint"
+	loop
+	frames 0 26
+	fps 30
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
+}
+
+$sequence "iron_down" {
+	$macro_idlesequence
+	activity "ACT_VM_IDOWN" 1
+	addlayer "delta_ik_iron_down"
+	addlayer "delta_idle_offset_back"
+	loop
+	frames 0 1
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
+	origin 0 12 4
+}
+
+$sequence "iron_fire" {
+	$macro_idlesequence
+	activity "ACT_VM_ISHOOT" 1
+	{ event AE_MUZZLEFLASH 0 "" }
+	{ event AE_CL_CREATE_PARTICLE_BRASS 2 "" }
+	blendlayer "delta_trigger" 0 1 10 10
+	blendlayer "delta_boltback" 1 1 10 10 noblend
+	snap
+	addlayer "delta_ik_iron_fire_1"
+	frames 0 41
+	fps 40
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
+}
+
+$sequence "iron_fire_a" {
+	$macro_idlesequence
+	activity "ACT_VM_ISHOOT" 1
+	{ event AE_MUZZLEFLASH 0 "" }
+	{ event AE_CL_CREATE_PARTICLE_BRASS 2 "" }
+	blendlayer "delta_trigger" 0 1 10 10
+	blendlayer "delta_boltback" 1 1 10 10 noblend
+	snap
+	addlayer "delta_ik_iron_fire_1"
+	frames 0 41
+	fps 40
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
+}
+
+$sequence "iron_fire_b" {
+	$macro_idlesequence
+	activity "ACT_VM_ISHOOT" 1
+	{ event AE_MUZZLEFLASH 0 "" }
+	{ event AE_CL_CREATE_PARTICLE_BRASS 2 "" }
+	blendlayer "delta_trigger" 0 1 10 10
+	blendlayer "delta_boltback" 1 1 10 10 noblend
+	snap
+	addlayer "delta_ik_iron_fire_2"
+	frames 0 41
+	fps 40
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
+}
+
+$sequence "iron_fire_c" {
+	$macro_idlesequence
+	activity "ACT_VM_ISHOOT" 1
+	{ event AE_MUZZLEFLASH 0 "" }
+	{ event AE_CL_CREATE_PARTICLE_BRASS 2 "" }
+	blendlayer "delta_trigger" 0 1 10 10
+	blendlayer "delta_boltback" 1 1 10 10 noblend
+	snap
+	addlayer "delta_ik_iron_fire_3"
+	frames 0 41
+	fps 40
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
+}
+
+$sequence "iron_fire_d" {
+	$macro_idlesequence
+	activity "ACT_VM_ISHOOT" 1
+	{ event AE_MUZZLEFLASH 0 "" }
+	{ event AE_CL_CREATE_PARTICLE_BRASS 2 "" }
+	blendlayer "delta_trigger" 0 1 10 10
+	blendlayer "delta_boltback" 1 1 10 10 noblend
+	snap
+	addlayer "delta_ik_iron_fire_1"
+	frames 0 41
+	fps 40
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
+}
+
+$sequence "iron_fire_e" {
+	$macro_idlesequence
+	activity "ACT_VM_ISHOOT" 1
+	{ event AE_MUZZLEFLASH 0 "" }
+	{ event AE_CL_CREATE_PARTICLE_BRASS 2 "" }
+	blendlayer "delta_trigger" 0 1 10 10
+	blendlayer "delta_boltback" 1 1 10 10 noblend
+	snap
+	addlayer "delta_ik_iron_fire_2"
+	frames 0 41
+	fps 40
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
+}
+
+$sequence "iron_fire_f" {
+	$macro_idlesequence
+	activity "ACT_VM_ISHOOT" 1
+	{ event AE_MUZZLEFLASH 0 "" }
+	{ event AE_CL_CREATE_PARTICLE_BRASS 2 "" }
+	blendlayer "delta_trigger" 0 1 10 10
+	blendlayer "delta_boltback" 1 1 10 10 noblend
+	snap
+	addlayer "delta_ik_iron_fire_3"
+	frames 0 41
+	fps 40
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
+}
+
+$sequence "iron_dryfire" {
+	$macro_idlesequence
+	activity "ACT_VM_ISHOOTDRY" 1
+	{ event 5004 0 "Weapon_M4A1.Empty" }
+	blendlayer "delta_trigger" 0 1 10 10
+	snap
+	addlayer "delta_ik_iron_dryfire"
+	frames 0 21
+	fps 40
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
+}
+
+$sequence "iron_fireselect" {
+	"anims\AN_1P_AUG_B_IRON_FireSelect.smd"
+	activity "ACT_VM_IFIREMODE" 1
+	{ event 5004 11 "Weapon_M4A1.ROF" }
+	snap
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
+}
+
+$sequence "foregrip_ready" {
+	$macro_idlesequence
+	activity "ACT_VM_READY_FOREGRIP" 1
+	{ event 5004 0 "Universal.Draw" }
+	{ event 5004 18 "Weapon_M4A1.Boltrelease" }
+	// { event 5004 28 "Weapon_M4A1.Boltrelease" }
+	{ event 5004 40 "Universal.LeanIn" }
+	blendlayer "delta_idle_offset_ready" -1 -1 0 20 spline
+	blendlayer "delta_ik_boltrelease" 0 0 70 70
+	blendlayer "delta_foregrip" 30 40 100 100
+	frames 0 70
+	fps 32
+	snap
+	ikrule rhand touch "b_wpn" usesource
+}
+
+$sequence "foregrip_draw" {
+	$macro_idlesequence
+	activity "ACT_VM_DRAW_FOREGRIP" 1
+	{ event 5004 0 "Universal.Draw" }
+	addlayer "delta_ik_draw"
+	frames 0 41
+	fps 34
+	ikrule rhand touch "b_wpn" usesource
+	addlayer "delta_foregrip"
+}
+
+$sequence "foregrip_holster" {
+	$macro_idlesequence
+	activity "ACT_VM_HOLSTER_FOREGRIP" 1
+	{ event 5004 0 "Universal.Holster" }
+	addlayer "delta_ik_holster"
+	frames 0 20
+	fps 34
+	ikrule rhand touch "b_wpn" usesource
+	addlayer "delta_foregrip"
+}
+
+$sequence "foregrip_down" {
+	$macro_idlesequence
+	activity "ACT_VM_DOWN_FOREGRIP" 1
+	addlayer "delta_ik_down"
+	loop
+	frames 0 1
+	ikrule rhand touch "b_wpn" usesource
+	addlayer "delta_foregrip"
+}
+
+$sequence "foregrip_crawl" {
+	$macro_idlesequence
+	activity "ACT_VM_CRAWL_FOREGRIP" 1
+	{ event 5004 0 "Universal.LeftCrawl" }
+	{ event 5004 22 "Universal.RightCrawl" }
+	addlayer "delta_ik_crawl"
+	// addlayer "delta_idle_offset_back"
+	loop
+	frames 0 51
+	fps 30
+	ikrule rhand touch "b_wpn" usesource
+	addlayer "delta_foregrip"
+}
+
+$sequence "foregrip_fire" {
+	$macro_idlesequence
+	activity "ACT_VM_PRIMARYATTACK_FOREGRIP" 1
+	{ event AE_MUZZLEFLASH 0 "" }
+	{ event AE_CL_CREATE_PARTICLE_BRASS 2 "" }
+	blendlayer "delta_trigger" 0 1 10 10
+	blendlayer "delta_boltback" 1 1 10 10 noblend
+	snap
+	addlayer "delta_ik_fire_1"
+	frames 0 41
+	fps 40
+	ikrule rhand touch "b_wpn" usesource
+	// ikrule lhand touch "b_wpn" usesource
+	addlayer "delta_foregrip"
+}
+
+$sequence "foregrip_dryfire" {
+	$macro_idlesequence
+	activity "ACT_VM_DRYFIRE_FOREGRIP" 1
+	{ event 5004 0 "Weapon_M4A1.Empty" }
+	blendlayer "delta_trigger" 0 1 10 10
+	snap
+	addlayer "delta_ik_dryfire"
+	frames 0 21
+	fps 40
+	ikrule rhand touch "b_wpn" usesource
+	// ikrule lhand touch "b_wpn" usesource
+	addlayer "delta_foregrip"
+}
+
+$sequence "foregrip_fireselect" {
+	"anims\AN_1P_AUG_B_FireSelect.smd"
+	activity "ACT_VM_FIREMODE_FOREGRIP" 1
+	{ event 5004 11 "Weapon_M4A1.ROF" }
+	snap
+	ikrule rhand touch "b_wpn" usesource
+	// ikrule lhand touch "b_wpn" usesource
+	addlayer "delta_foregrip"
+	// blendlayer "delta_foregrip" -1 -1 0 9
+	// blendlayer "delta_foregrip" 24 33 100 100
+}
+
+$sequence "foregrip_iron_down" {
+	$macro_idlesequence
+	activity "ACT_VM_IDOWN_FOREGRIP" 1
+	addlayer "delta_ik_iron_down"
+	addlayer "delta_idle_offset_back"
+	loop
+	frames 0 1
+	ikrule rhand touch "b_wpn" usesource
+	// ikrule lhand touch "b_wpn" usesource
+	origin 0 12 4
+	addlayer "delta_foregrip" // we hold this one normally by the handguard
+}
+
+$sequence "foregrip_iron_fire" {
+	$macro_idlesequence
+	activity "ACT_VM_ISHOOT_FOREGRIP" 1
+	{ event AE_MUZZLEFLASH 0 "" }
+	{ event AE_CL_CREATE_PARTICLE_BRASS 2 "" }
+	blendlayer "delta_trigger" 0 1 10 10
+	blendlayer "delta_boltback" 1 1 10 10 noblend
+	snap
+	addlayer "delta_ik_iron_fire_1"
+	frames 0 41
+	fps 40
+	ikrule rhand touch "b_wpn" usesource
+	// ikrule lhand touch "b_wpn" usesource
+	addlayer "delta_foregrip"
+}
+
+$sequence "foregrip_iron_fire_a" {
+	$macro_idlesequence
+	activity "ACT_VM_ISHOOT_FOREGRIP" 1
+	{ event AE_MUZZLEFLASH 0 "" }
+	{ event AE_CL_CREATE_PARTICLE_BRASS 2 "" }
+	blendlayer "delta_trigger" 0 1 10 10
+	blendlayer "delta_boltback" 1 1 10 10 noblend
+	snap
+	addlayer "delta_ik_iron_fire_1"
+	frames 0 41
+	fps 40
+	ikrule rhand touch "b_wpn" usesource
+	// ikrule lhand touch "b_wpn" usesource
+	addlayer "delta_foregrip"
+}
+
+$sequence "foregrip_iron_fire_b" {
+	$macro_idlesequence
+	activity "ACT_VM_ISHOOT_FOREGRIP" 1
+	{ event AE_MUZZLEFLASH 0 "" }
+	{ event AE_CL_CREATE_PARTICLE_BRASS 2 "" }
+	blendlayer "delta_trigger" 0 1 10 10
+	blendlayer "delta_boltback" 1 1 10 10 noblend
+	snap
+	addlayer "delta_ik_iron_fire_2"
+	frames 0 41
+	fps 40
+	ikrule rhand touch "b_wpn" usesource
+	// ikrule lhand touch "b_wpn" usesource
+	addlayer "delta_foregrip"
+}
+
+$sequence "foregrip_iron_fire_c" {
+	$macro_idlesequence
+	activity "ACT_VM_ISHOOT_FOREGRIP" 1
+	{ event AE_MUZZLEFLASH 0 "" }
+	{ event AE_CL_CREATE_PARTICLE_BRASS 2 "" }
+	blendlayer "delta_trigger" 0 1 10 10
+	blendlayer "delta_boltback" 1 1 10 10 noblend
+	snap
+	addlayer "delta_ik_iron_fire_3"
+	frames 0 41
+	fps 40
+	ikrule rhand touch "b_wpn" usesource
+	// ikrule lhand touch "b_wpn" usesource
+	addlayer "delta_foregrip"
+}
+
+$sequence "foregrip_iron_fire_d" {
+	$macro_idlesequence
+	activity "ACT_VM_ISHOOT_FOREGRIP" 1
+	{ event AE_MUZZLEFLASH 0 "" }
+	{ event AE_CL_CREATE_PARTICLE_BRASS 2 "" }
+	blendlayer "delta_trigger" 0 1 10 10
+	blendlayer "delta_boltback" 1 1 10 10 noblend
+	snap
+	addlayer "delta_ik_iron_fire_1"
+	frames 0 41
+	fps 40
+	ikrule rhand touch "b_wpn" usesource
+	// ikrule lhand touch "b_wpn" usesource
+	addlayer "delta_foregrip"
+}
+
+$sequence "foregrip_iron_fire_e" {
+	$macro_idlesequence
+	activity "ACT_VM_ISHOOT_FOREGRIP" 1
+	{ event AE_MUZZLEFLASH 0 "" }
+	{ event AE_CL_CREATE_PARTICLE_BRASS 2 "" }
+	blendlayer "delta_trigger" 0 1 10 10
+	blendlayer "delta_boltback" 1 1 10 10 noblend
+	snap
+	addlayer "delta_ik_iron_fire_2"
+	frames 0 41
+	fps 40
+	ikrule rhand touch "b_wpn" usesource
+	// ikrule lhand touch "b_wpn" usesource
+	addlayer "delta_foregrip"
+}
+
+$sequence "foregrip_iron_fire_f" {
+	$macro_idlesequence
+	activity "ACT_VM_ISHOOT_FOREGRIP" 1
+	{ event AE_MUZZLEFLASH 0 "" }
+	{ event AE_CL_CREATE_PARTICLE_BRASS 2 "" }
+	blendlayer "delta_trigger" 0 1 10 10
+	blendlayer "delta_boltback" 1 1 10 10 noblend
+	snap
+	addlayer "delta_ik_iron_fire_3"
+	frames 0 41
+	fps 40
+	ikrule rhand touch "b_wpn" usesource
+	// ikrule lhand touch "b_wpn" usesource
+	addlayer "delta_foregrip"
+}
+
+$sequence "foregrip_iron_dryfire" {
+	$macro_idlesequence
+	activity "ACT_VM_ISHOOTDRY_FOREGRIP" 1
+	{ event 5004 0 "Weapon_M4A1.Empty" }
+	blendlayer "delta_trigger" 0 1 10 10
+	snap
+	addlayer "delta_ik_iron_dryfire"
+	frames 0 21
+	fps 40
+	ikrule rhand touch "b_wpn" usesource
+	// ikrule lhand touch "b_wpn" usesource
+	addlayer "delta_foregrip"
+}
+
+$sequence "foregrip_iron_fireselect" {
+	"anims\AN_1P_AUG_B_IRON_FireSelect.smd"
+	activity "ACT_VM_IFIREMODE_FOREGRIP" 1
+	{ event 5004 11 "Weapon_M4A1.ROF" }
+	snap
+	ikrule rhand touch "b_wpn" usesource
+	// ikrule lhand touch "b_wpn" usesource
+	addlayer "delta_foregrip"
+	// blendlayer "delta_foregrip" -1 -1 0 9
+	// blendlayer "delta_foregrip" 24 33 100 100
+}
+
+$sequence "foregrip_reload" {
+	"anims\AN_1P_AUG_B_Reload.smd"
+	activity "ACT_VM_RELOAD_FOREGRIP" 1
+	{ event 5004 32 "Weapon_M4A1.Magrelease" }
+	{ event 5004 42 "Weapon_M4A1.Magout" }
+	{ event 46 75 "" }
+	{ event 5004 100 "Weapon_M4A1.Magin" }
+	{ event 5004 104 "Weapon_M4A1.Hit" }
+	fps 36
+	ikrule rhand touch "b_wpn" usesource
+	// ikrule lhand touch "b_wpn" usesource
+
+	blendlayer "delta_foregrip" -1 -1 0 5
+	blendlayer "delta_foregrip" 125 130 200 200
+}
+
+$sequence "foregrip_reloadempty" {
+	"anims\AN_1P_AUG_B_Reload_Empty_Speed.smd"
+	activity "ACT_VM_RELOADEMPTY_FOREGRIP" 1
+	{ event 5004 16 "Weapon_M4A1.Magrelease" }
+	{ event 5004 19 "Weapon_M4A1.Magout" }
+	{ event 5004 38 "Universal.Draw" }
+	{ event 46 42 "" }
+	{ event 5004 75 "Weapon_M4A1.Magin" }
+	{ event 5004 80 "Weapon_M4A1.Hit" }
+	{ event 5004 112 "Weapon_M4A1.Boltback" }
+	{ event 5004 118 "Weapon_M4A1.Boltrelease" }
+	fps 34
+	ikrule rhand touch "b_wpn" usesource
+	// ikrule lhand touch "b_wpn" usesource
+	blendlayer "delta_foregrip" -1 -1 0 3
+	blendlayer "delta_foregrip" 130 133 200 200
+}
+
+$sequence "foregrip_sprint" {
+	$macro_idlesequence
+	activity "ACT_VM_SPRINT_FOREGRIP" 1
+	addlayer "delta_ik_sprint"
+	loop
+	frames 0 26
+	fps 30
+	ikrule rhand touch "b_wpn" usesource
+	// ikrule lhand touch "b_wpn" usesource
+	addlayer "delta_foregrip"
+}
+
+// gl
+$sequence "gl_ready" {
+	$macro_idlesequence
+	activity "ACT_VM_READY_GL" 1
+	{ event 5004 0 "Universal.Draw" }
+	{ event 5004 18 "Weapon_M4A1.Boltrelease" }
+	{ event 5004 40 "Universal.LeanIn" }
+	blendlayer "delta_idle_offset_ready" -1 -1 0 20 spline
+	addlayer "delta_gl"
+	blendlayer "delta_ik_gl_boltrelease" 0 0 70 70
+	frames 0 70
+	fps 32
+	snap
+	ikrule rhand touch "b_wpn" usesource
+}
+
+$sequence "gl_draw" {
+	$macro_idlesequence
+	activity "ACT_VM_DRAW_GL" 1
+	{ event 5004 0 "Universal.Draw" }
+	addlayer "delta_ik_draw"
+	frames 0 41
+	fps 34
+	ikrule rhand touch "b_wpn" usesource
+	addlayer "delta_gl"
+}
+
+$sequence "gl_holster" {
+	$macro_idlesequence
+	activity "ACT_VM_HOLSTER_GL" 1
+	{ event 5004 0 "Universal.Holster" }
+	addlayer "delta_ik_holster"
+	frames 0 20
+	fps 34
+	ikrule rhand touch "b_wpn" usesource
+	addlayer "delta_gl"
+}
+
+$sequence "gl_down" {
+	$macro_idlesequence
+	activity "ACT_VM_DOWN_GL" 1
+	addlayer "delta_ik_down"
+	loop
+	frames 0 1
+	ikrule rhand touch "b_wpn" usesource
+	addlayer "delta_gl"
+}
+
+$sequence "gl_crawl" {
+	$macro_idlesequence
+	activity "ACT_VM_CRAWL_GL" 1
+	{ event 5004 0 "Universal.LeftCrawl" }
+	{ event 5004 22 "Universal.RightCrawl" }
+	addlayer "delta_ik_crawl"
+	// addlayer "delta_idle_offset_back"
+	loop
+	frames 0 51
+	fps 30
+	ikrule rhand touch "b_wpn" usesource
+	addlayer "delta_gl"
+}
+
+$sequence "gl_fire" {
+	$macro_idlesequence
+	activity "ACT_VM_PRIMARYATTACK_GL" 1
+	{ event AE_MUZZLEFLASH 0 "" }
+	{ event AE_CL_CREATE_PARTICLE_BRASS 2 "" }
+	blendlayer "delta_trigger" 0 1 10 10
+	blendlayer "delta_boltback" 1 1 10 10 noblend
+	snap
+	addlayer "delta_ik_fire_1"
+	frames 0 41
+	fps 40
+	ikrule rhand touch "b_wpn" usesource
+	// ikrule lhand touch "b_wpn" usesource
+	addlayer "delta_gl"
+}
+
+$sequence "gl_dryfire" {
+	$macro_idlesequence
+	activity "ACT_VM_DRYFIRE_GL" 1
+	{ event 5004 0 "Weapon_M4A1.Empty" }
+	blendlayer "delta_trigger" 0 1 10 10
+	snap
+	addlayer "delta_ik_dryfire"
+	frames 0 21
+	fps 40
+	ikrule rhand touch "b_wpn" usesource
+	// ikrule lhand touch "b_wpn" usesource
+	addlayer "delta_gl"
+}
+
+$sequence "gl_fireselect" {
+	"anims\AN_1P_AUG_B_FireSelect.smd"
+	activity "ACT_VM_FIREMODE_GL" 1
+	{ event 5004 11 "Weapon_M4A1.ROF" }
+	snap
+	ikrule rhand touch "b_wpn" usesource
+	// ikrule lhand touch "b_wpn" usesource
+	addlayer "delta_gl"
+	// blendlayer "delta_gl" -1 -1 0 9
+	// blendlayer "delta_gl" 24 33 100 100
+	// blendlayer "delta_gl_moveforward" 0 9 24 33
+}
+
+$sequence "gl_reload" {
+	"anims\AN_1P_AUG_GL_Reload.smd"
+	activity "ACT_VM_RELOAD_GL" 1
+	{ event 5004 32 "Weapon_M4A1.Magrelease" }
+	{ event 5004 42 "Weapon_M4A1.Magout" }
+	{ event 46 75 "" }
+	{ event 5004 100 "Weapon_M4A1.Magin" }
+	{ event 5004 104 "Weapon_M4A1.Hit" }
+	fps 36
+	ikrule rhand touch "b_wpn" usesource
+	// ikrule lhand touch "b_wpn" usesource
+	addlayer "delta_gl_moveforward"
+	snap
+}
+
+$sequence "gl_reloadempty" {
+	"anims\AN_1P_AUG_GL_Reload_Empty_Speed.smd"
+	activity "ACT_VM_RELOADEMPTY_GL" 1
+	{ event 5004 16 "Weapon_M4A1.Magrelease" }
+	{ event 5004 19 "Weapon_M4A1.Magout" }
+	{ event 5004 38 "Universal.Draw" }
+	{ event 46 42 "" }
+	{ event 5004 75 "Weapon_M4A1.Magin" }
+	{ event 5004 80 "Weapon_M4A1.Hit" }
+	{ event 5004 112 "Weapon_M4A1.Boltback" }
+	{ event 5004 118 "Weapon_M4A1.Boltrelease" }
+	fps 34
+	ikrule rhand touch "b_wpn" usesource
+	// ikrule lhand touch "b_wpn" usesource
+	addlayer "delta_gl_moveforward"
+	snap
+}
+
+$sequence "gl_sprint" {
+	$macro_idlesequence
+	activity "ACT_VM_SPRINT_GL" 1
+	addlayer "delta_ik_sprint"
+	loop
+	frames 0 26
+	fps 30
+	ikrule rhand touch "b_wpn" usesource
+	// ikrule lhand touch "b_wpn" usesource
+	addlayer "delta_gl"
+}
+
+$sequence "gl_iron_down" {
+	$macro_idlesequence
+	activity "ACT_VM_IDOWN_GL" 1
+	addlayer "delta_ik_iron_down"
+	addlayer "delta_idle_offset_back"
+	loop
+	frames 0 1
+	ikrule rhand touch "b_wpn" usesource
+	// ikrule lhand touch "b_wpn" usesource
+	origin 0 12 4
+	addlayer "delta_gl"
+}
+
+$sequence "gl_iron_fire" {
+	$macro_idlesequence
+	activity "ACT_VM_ISHOOT_GL" 1
+	{ event AE_MUZZLEFLASH 0 "" }
+	{ event AE_CL_CREATE_PARTICLE_BRASS 2 "" }
+	blendlayer "delta_trigger" 0 1 10 10
+	blendlayer "delta_boltback" 1 1 10 10 noblend
+	snap
+	addlayer "delta_ik_iron_fire_1"
+	frames 0 41
+	fps 40
+	ikrule rhand touch "b_wpn" usesource
+	// ikrule lhand touch "b_wpn" usesource
+	addlayer "delta_gl"
+}
+
+$sequence "gl_iron_fire_a" {
+	$macro_idlesequence
+	activity "ACT_VM_ISHOOT_GL" 1
+	{ event AE_MUZZLEFLASH 0 "" }
+	{ event AE_CL_CREATE_PARTICLE_BRASS 2 "" }
+	blendlayer "delta_trigger" 0 1 10 10
+	blendlayer "delta_boltback" 1 1 10 10 noblend
+	snap
+	addlayer "delta_ik_iron_fire_1"
+	frames 0 41
+	fps 40
+	ikrule rhand touch "b_wpn" usesource
+	// ikrule lhand touch "b_wpn" usesource
+	addlayer "delta_gl"
+}
+
+$sequence "gl_iron_fire_b" {
+	$macro_idlesequence
+	activity "ACT_VM_ISHOOT_GL" 1
+	{ event AE_MUZZLEFLASH 0 "" }
+	{ event AE_CL_CREATE_PARTICLE_BRASS 2 "" }
+	blendlayer "delta_trigger" 0 1 10 10
+	blendlayer "delta_boltback" 1 1 10 10 noblend
+	snap
+	addlayer "delta_ik_iron_fire_2"
+	frames 0 41
+	fps 40
+	ikrule rhand touch "b_wpn" usesource
+	// ikrule lhand touch "b_wpn" usesource
+	addlayer "delta_gl"
+}
+
+$sequence "gl_iron_fire_c" {
+	$macro_idlesequence
+	activity "ACT_VM_ISHOOT_GL" 1
+	{ event AE_MUZZLEFLASH 0 "" }
+	{ event AE_CL_CREATE_PARTICLE_BRASS 2 "" }
+	blendlayer "delta_trigger" 0 1 10 10
+	blendlayer "delta_boltback" 1 1 10 10 noblend
+	snap
+	addlayer "delta_ik_iron_fire_3"
+	frames 0 41
+	fps 40
+	ikrule rhand touch "b_wpn" usesource
+	// ikrule lhand touch "b_wpn" usesource
+	addlayer "delta_gl"
+}
+
+$sequence "gl_iron_fire_d" {
+	$macro_idlesequence
+	activity "ACT_VM_ISHOOT_GL" 1
+	{ event AE_MUZZLEFLASH 0 "" }
+	{ event AE_CL_CREATE_PARTICLE_BRASS 2 "" }
+	blendlayer "delta_trigger" 0 1 10 10
+	blendlayer "delta_boltback" 1 1 10 10 noblend
+	snap
+	addlayer "delta_ik_iron_fire_1"
+	frames 0 41
+	fps 40
+	ikrule rhand touch "b_wpn" usesource
+	// ikrule lhand touch "b_wpn" usesource
+	addlayer "delta_gl"
+}
+
+$sequence "gl_iron_fire_e" {
+	$macro_idlesequence
+	activity "ACT_VM_ISHOOT_GL" 1
+	{ event AE_MUZZLEFLASH 0 "" }
+	{ event AE_CL_CREATE_PARTICLE_BRASS 2 "" }
+	blendlayer "delta_trigger" 0 1 10 10
+	blendlayer "delta_boltback" 1 1 10 10 noblend
+	snap
+	addlayer "delta_ik_iron_fire_2"
+	frames 0 41
+	fps 40
+	ikrule rhand touch "b_wpn" usesource
+	// ikrule lhand touch "b_wpn" usesource
+	addlayer "delta_gl"
+}
+
+$sequence "gl_iron_fire_f" {
+	$macro_idlesequence
+	activity "ACT_VM_ISHOOT_GL" 1
+	{ event AE_MUZZLEFLASH 0 "" }
+	{ event AE_CL_CREATE_PARTICLE_BRASS 2 "" }
+	blendlayer "delta_trigger" 0 1 10 10
+	blendlayer "delta_boltback" 1 1 10 10 noblend
+	snap
+	addlayer "delta_ik_iron_fire_3"
+	frames 0 41
+	fps 40
+	ikrule rhand touch "b_wpn" usesource
+	// ikrule lhand touch "b_wpn" usesource
+	addlayer "delta_gl"
+}
+
+$sequence "gl_iron_dryfire" {
+	$macro_idlesequence
+	activity "ACT_VM_ISHOOTDRY_GL" 1
+	{ event 5004 0 "Weapon_M4A1.Empty" }
+	blendlayer "delta_trigger" 0 1 10 10
+	snap
+	addlayer "delta_ik_iron_dryfire"
+	frames 0 21
+	fps 40
+	ikrule rhand touch "b_wpn" usesource
+	// ikrule lhand touch "b_wpn" usesource
+	addlayer "delta_gl"
+}
+
+$sequence "gl_iron_fireselect" {
+	"anims\AN_1P_AUG_B_IRON_FireSelect.smd"
+	activity "ACT_VM_IFIREMODE_GL" 1
+	{ event 5004 11 "Weapon_M4A1.ROF" }
+	snap
+	ikrule rhand touch "b_wpn" usesource
+	// ikrule lhand touch "b_wpn" usesource
+	addlayer "delta_gl"
+	// blendlayer "delta_gl" -1 -1 0 9
+	// blendlayer "delta_gl" 24 33 100 100
+	// blendlayer "delta_gl_moveforward" 0 9 24 33
+}
+
+// glsetup
+
+$sequence "glsetup_in" {
+	$macro_idlesequence
+	activity "ACT_VM_TRANSITION_GLSETUP" 1
+	{ event 5004 0 "Weapon_m203.Select" }
+	frames 0 36
+	addlayer "delta_ik_glsetup_in"
+	blendlayer "delta_gl" -1 -1 0 36
+	blendlayer "delta_gl_moveforward" 0 36 100 100
+	blendlayer "delta_glsetup_rhand" 0 36 100 100
+	blendlayer "delta_glsetup_lhand" 0 36 100 100
+	ikrule rhand touch "b_wpn" usesequence
+	ikrule lhand touch "b_wpn" usesequence
+	snap
+	fps 34
+}
+
+$sequence "glsetup_out" {
+	$macro_idlesequence
+	activity "ACT_VM_TRANSITION_GL" 1
+	{ event 5004 0 "Weapon_m203.DeSelect" }
+	frames 0 46
+	addlayer "delta_ik_glsetup_out"
+	blendlayer "delta_gl" 0 46 100 100
+	blendlayer "delta_gl_moveforward" -1 -1 0 46
+	blendlayer "delta_glsetup_rhand" -1 -1 0 46
+	blendlayer "delta_glsetup_lhand" -1 -1 0 46
+	ikrule rhand touch "b_wpn" usesequence
+	ikrule lhand touch "b_wpn" usesequence
+	snap
+	fps 34
+}
+
+$sequence "glsetup_ready" {
+	"anims\AN_1P_AUG_GLSetup_Idle"
+	activity "ACT_VM_READY_GLSETUP" 1
+	{ event 5004 0 "Universal.Draw" }
+	addlayer "delta_ik_draw"
+	frames 0 41
+	fps 34
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
+	addlayer "delta_gl_moveforward"
+	snap
+}
+
+$sequence "glsetup_draw" {
+	"anims\AN_1P_AUG_GLSetup_Idle"
+	activity "ACT_VM_DRAW_GLSETUP" 1
+	{ event 5004 0 "Universal.Draw" }
+	addlayer "delta_ik_draw"
+	frames 0 41
+	fps 34
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
+	addlayer "delta_gl_moveforward"
+}
+
+$sequence "glsetup_holster" {
+	"anims\AN_1P_AUG_GLSetup_Idle"
+	activity "ACT_VM_HOLSTER_GLSETUP" 1
+	{ event 5004 0 "Universal.Holster" }
+	addlayer "delta_ik_holster"
+	frames 0 20
+	fps 34
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
+	addlayer "delta_gl_moveforward"
+}
+
+$sequence "glsetup_down" {
+	"anims\AN_1P_AUG_GLSetup_Idle"
+	activity "ACT_VM_DOWN_GLSETUP" 1
+	addlayer "delta_ik_down"
+	loop
+	frames 0 1
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
+	addlayer "delta_gl_moveforward"
+}
+
+$sequence "glsetup_crawl" {
+	"anims\AN_1P_AUG_GLSetup_Idle"
+	activity "ACT_VM_CRAWL_GLSETUP" 1
+	{ event 5004 0 "Universal.LeftCrawl" }
+	{ event 5004 22 "Universal.RightCrawl" }
+	addlayer "delta_ik_crawl"
+	// addlayer "delta_idle_offset_back"
+	loop
+	frames 0 51
+	fps 30
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
+	addlayer "delta_gl_moveforward"
+}
+
+$sequence "glsetup_fire" {
+	"anims\AN_1P_AUG_GLSetup_Idle"
+	activity "ACT_VM_PRIMARYATTACK_GLSETUP" 1
+	{ event AE_GL_MUZZLEFLASH 0 "" }
+	blendlayer "delta_glsetup_trigger" 0 2 10 12
+	addlayer "delta_ik_glsetup_fire"
+	frames 0 41
+	fps 40
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
+	addlayer "delta_gl_moveforward"
+	snap
+}
+
+$sequence "glsetup_dryfire" {
+	"anims\AN_1P_AUG_GLSetup_Idle"
+	activity "ACT_VM_DRYFIRE_GLSETUP" 1
+	{ event 5004 0 "Weapon_m203.Empty" }
+	blendlayer "delta_glsetup_trigger" 0 2 10 12
+	addlayer "delta_ik_glsetup_dryfire"
+	frames 0 41
+	fps 40
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
+	addlayer "delta_gl_moveforward"
+	snap
+}
+
+$sequence "glsetup_reload" {
+	"anims\AN_1P_AUG_GLSetup_Reload.smd"
+	activity "ACT_VM_RELOADEMPTY_GLSETUP" 1
+	{ event 5004 0 "Universal.GLBeginReload" }
+	{ event 5004 20 "Weapon_m203.OpenBarrel" }
+	{ event 5004 24 "Weapon_m203.Select" }
+	{ event AE_EMIT_SHELL_M203 40 "" }
+	{ event 5004 48 "Weapon_m203.GrenadeDrop" }
+	{ event 5004 65 "Weapon_m203.GrenadeIn" }
+	{ event 5004 101 "Weapon_m203.CloseBarrel" }
+	{ event 46 85 "" }
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
+	addlayer "delta_gl_moveforward"
+	fps 36
+	snap
+}
+
+$sequence "glsetup_sprint" {
+	"anims\AN_1P_AUG_GLSetup_Idle"
+	activity "ACT_VM_SPRINT_GLSETUP" 1
+	addlayer "delta_ik_sprint"
+	loop
+	frames 0 26
+	fps 30
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
+	addlayer "delta_gl_moveforward"
+}
+
+$sequence "glsetup_iron_down" {
+	"anims\AN_1P_AUG_GLSetup_Idle"
+	activity "ACT_VM_IDOWN_GLSETUP" 1
+	addlayer "delta_ik_iron_down"
+	addlayer "delta_idle_offset_back"
+	loop
+	frames 0 1
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
+	origin 0 12 4
+	addlayer "delta_gl_moveforward"
+	addlayer "delta_fix_unrotate_weapon"
+}
+
+$sequence "glsetup_iron_fire" {
+	"anims\AN_1P_AUG_GLSetup_Idle"
+	activity "ACT_VM_ISHOOT_GLSETUP" 1
+	{ event AE_GL_MUZZLEFLASH 0 "" }
+	blendlayer "delta_glsetup_trigger" 0 2 10 12
+	addlayer "delta_ik_glsetup_iron_fire"
+	frames 0 41
+	fps 40
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
+	addlayer "delta_gl_moveforward"
+	addlayer "delta_fix_unrotate_weapon"
+	snap
+}
+
+$sequence "glsetup_iron_dryfire" {
+	"anims\AN_1P_AUG_GLSetup_Idle"
+	activity "ACT_VM_ISHOOTDRY_GLSETUP" 1
+	{ event 5004 0 "Weapon_m203.Empty" }
+	blendlayer "delta_glsetup_trigger" 0 2 10 12
+	addlayer "delta_ik_glsetup_iron_dryfire"
+	frames 0 41
+	fps 40
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
+	addlayer "delta_gl_moveforward"
+	addlayer "delta_fix_unrotate_weapon"
+	snap
+}
+
+
+// nonoriginal
+
+$animation "a_delta_boltback" "anims\AN_1P_AUG_B_FireBolt.smd" frames 0 7
+
+$sequence "delta_boltback" delta {
+	a_delta_boltback
+	weightlist "weights_boltback"
+}
+
+$sequence delta_trigger delta {
+	"anims\AN_1P_AUG_B_FireTrigger.smd"
+	frames 0 14
+	weightlist "weights_trigger"
+}
+
+$animation "a_glsetup_rhand" "anims\AN_1P_AUG_GLSetup_Idle.smd" frames 0 0 subtract "idle" 0
+$sequence "delta_glsetup_rhand" delta {
+	a_glsetup_rhand
+	weightlist "weights_glsetup_rhand"
+}
+
+$animation "a_glsetup_lhand" "anims\AN_1P_AUG_GLSetup_Idle.smd" frames 0 0 subtract "idle" 0
+$sequence "delta_glsetup_lhand" delta {
+	a_glsetup_lhand
+	weightlist "weights_glsetup_lhand"
+}
+
+$sequence delta_glsetup_trigger delta {
+	"anims\AN_1P_AUG_GLSetup_FireTrigger.smd"
+	frames 5 5
+	weightlist "weights_glsetup_trigger"
+}
+
+$sequence "delta_gl_moveback" delta {
+	// "anims\delta_gl_moveback.smd"
+	"anims\AN_1P_AUG_B_Idle.smd"
+	subtract "idle" 0
+	frames 0 1
+	weightlist "weights_gl_moveback"
+	autoplay
+}
+
+$sequence "delta_gl_moveforward" delta {
+	$macro_idlesequence
+	subtract "idle" 0
+	frames 0 1
+	subtract "delta_gl_moveback" 0
+	weightlist "weights_gl_moveback"
+}
+
+// $animation "a_delta_fix_rotate_weapon" "anims\delta_fix_rotate_weapon.smd" subtract "idle" 0 frames 0 0
+$animation "a_delta_fix_rotate_weapon" "anims\AN_1P_AUG_B_Idle.smd" subtract "idle" 0 frames 0 0
+$sequence "delta_fix_rotate_weapon" delta a_delta_fix_rotate_weapon
+
+$sequence "delta_fix_unrotate_weapon" delta {
+	$macro_idlesequence
+	subtract "idle" 0
+	frames 0 1
+	subtract "delta_fix_rotate_weapon" 0
+}
+
+
+// generic idle sequence
+$sequence "seq_gen_idle" "..\..\animations\gen_rif\anims\AN_1P_GEN_RIF_B_Idle.smd"
+
+// idle sequence weapon bone offsets
+$sequence "delta_idle_offset_back" delta "..\..\animations\gen_rif\anims\AN_1P_GEN_RIF_B_Idle_Offset_Back.smd" subtract "seq_gen_idle" 0 weightlist "weights_wpnonly"
+$sequence "delta_idle_offset_ready" delta "..\..\animations\gen_rif\anims\AN_1P_GEN_RIF_B_Idle_Offset_Ready.smd" subtract "seq_gen_idle" 0 weightlist "weights_delta_wpn_arms"
+$sequence "delta_idle_offset_r_upperarm_forward" delta "..\..\animations\gen_rif\anims\AN_1P_GEN_RIF_B_Idle_Offset_Upperarms_Forward.smd" subtract "seq_gen_idle" 0 weightlist "weights_r_upperarm"
+$sequence "delta_idle_offset_l_upperarm_forward" delta "..\..\animations\gen_rif\anims\AN_1P_GEN_RIF_B_Idle_Offset_Upperarms_Forward.smd" subtract "seq_gen_idle" 0 weightlist "weights_l_upperarm"
+
+// boltrelease
+// $animation a_ik_boltrelease "anims\AN_1P_AUG_B_Reload_BoltRelease.smd"
+// $sequence "delta_ik_boltrelease" predelta a_ik_boltrelease weightlist "weights_boltrelease"
+
+// boltrelease
+$animation a_ik_boltrelease "anims\AN_1P_AUG_B_Reload_BoltRelease.smd"
+$sequence "delta_ik_boltrelease" predelta a_ik_boltrelease weightlist "weights_boltrelease"
+
+$animation a_ik_gl_boltrelease "anims\AN_1P_AUG_GL_Reload_BoltRelease.smd"
+$sequence "delta_ik_gl_boltrelease" predelta a_ik_gl_boltrelease weightlist "weights_boltrelease"
+
+// draw
+$animation a_ik_draw "..\..\animations\gen_rif\anims\AN_1P_GEN_RIF_B_Draw.smd"
+$sequence "delta_ik_draw" delta a_ik_draw weightlist "weights_wpnonly"
+
+// holster
+$animation a_ik_holster "..\..\animations\gen_rif\anims\AN_1P_GEN_RIF_B_Holster.smd"
+$sequence "delta_ik_holster" delta a_ik_holster weightlist "weights_wpnonly"
+
+// sprint
+$animation a_ik_sprint "..\..\animations\gen_rif\anims\AN_1P_GEN_RIF_B_Sprint.smd" subtract "seq_gen_idle" 0
+$sequence "delta_ik_sprint" delta a_ik_sprint weightlist "weights_delta_wpn_arms" loop fixuploop -1 1
+
+// crawl
+$animation a_ik_crawl "..\..\animations\gen_rif\anims\AN_1P_GEN_RIF_B_Crawl.smd" subtract "seq_gen_idle" 0
+$sequence "delta_ik_crawl" delta a_ik_crawl weightlist "weights_delta_wpn_arms" loop fixuploop -1 1
+
+// fire
+$animation a_ik_fire_1 "anims\AN_1P_AUG_B_Fire1.smd"
+$sequence "delta_ik_fire_1" delta a_ik_fire_1 weightlist "weights_wpnonly"
+
+$animation a_ik_fire_2 "anims\AN_1P_AUG_B_Fire2.smd"
+$sequence "delta_ik_fire_2" delta a_ik_fire_2 weightlist "weights_wpnonly"
+
+$animation a_ik_fire_3 "anims\AN_1P_AUG_B_Fire1.smd"
+$sequence "delta_ik_fire_3" delta a_ik_fire_3 weightlist "weights_wpnonly"
+
+$animation a_ik_dryfire "..\..\animations\gen_rif\anims\AN_1P_GEN_RIF_B_Dryfire.smd"
+$sequence "delta_ik_dryfire" delta a_ik_dryfire weightlist "weights_wpnonly"
+
+// iron fire
+$animation a_ik_iron_fire_1 "anims\AN_1P_AUG_B_IRON_Fire1.smd"
+$sequence "delta_ik_iron_fire_1" delta a_ik_iron_fire_1 weightlist "weights_wpnonly"
+
+$animation a_ik_iron_fire_2 "anims\AN_1P_AUG_B_IRON_Fire2.smd"
+$sequence "delta_ik_iron_fire_2" delta a_ik_iron_fire_2 weightlist "weights_wpnonly"
+
+$animation a_ik_iron_fire_3 "anims\AN_1P_AUG_B_IRON_Fire1.smd"
+$sequence "delta_ik_iron_fire_3" delta a_ik_iron_fire_3 weightlist "weights_wpnonly"
+
+$animation a_ik_iron_dryfire "..\..\animations\gen_rif\anims\AN_1P_GEN_RIF_B_IRON_Dryfire.smd"
+$sequence "delta_ik_iron_dryfire" delta a_ik_iron_dryfire weightlist "weights_wpnonly"
+
+// down
+$animation a_ik_down "..\..\animations\gen_rif\anims\AN_1P_GEN_RIF_B_Down.smd"
+$sequence "delta_ik_down" delta a_ik_down weightlist "weights_wpnonly_down"
+
+// iron down
+$animation a_ik_iron_down "..\..\animations\gen_rif\anims\AN_1P_GEN_RIF_B_Iron_Blocked.smd"
+$sequence "delta_ik_iron_down" delta a_ik_iron_down weightlist "weights_wpnonly_down"
+
+// glsetup in/out
+$animation a_ik_glsetup_in "anims\AN_1P_AUG_GL_In.smd" lineardelta
+$sequence "delta_ik_glsetup_in" predelta a_ik_glsetup_in
+
+$animation a_ik_glsetup_out "anims\AN_1P_AUG_GL_Out.smd" lineardelta
+$sequence "delta_ik_glsetup_out" predelta a_ik_glsetup_out
+
+// glsetup fire
+// $animation a_ik_glsetup_fire "anims\AN_1P_AUG_GLSetup_Fire.smd"
+$animation a_ik_glsetup_fire "anims\AN_1P_AUG_MKSetup_Fire1.smd"
+$sequence "delta_ik_glsetup_fire" delta a_ik_glsetup_fire weightlist "weights_wpnonly"
+
+$animation a_ik_glsetup_dryfire "..\..\animations\gen_rif\anims\AN_1P_GEN_RIF_B_Dryfire.smd"
+$sequence "delta_ik_glsetup_dryfire" delta a_ik_glsetup_dryfire weightlist "weights_wpnonly"
+
+// glsetup iron fire
+// $animation a_ik_glsetup_iron_fire "anims\AN_1P_AUG_GLSetup_IRON_Fire.smd"
+$animation a_ik_glsetup_iron_fire "anims\AN_1P_AUG_MKSetup_Fire1.smd"
+$sequence "delta_ik_glsetup_iron_fire" delta a_ik_glsetup_iron_fire weightlist "weights_wpnonly"
+
+$animation a_ik_glsetup_iron_dryfire "..\..\animations\gen_rif\anims\AN_1P_GEN_RIF_B_IRON_Dryfire.smd"
+$sequence "delta_ik_glsetup_iron_dryfire" delta a_ik_glsetup_iron_dryfire weightlist "weights_wpnonly"

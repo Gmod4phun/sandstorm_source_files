@@ -1,6 +1,6 @@
 // Created by Crowbar 0.55
 
-$include "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\unreal_scale.qci"
+$include "..\..\..\unreal_scale.qci"
 
 $modelname "weapons\v_m1911.mdl"
 
@@ -108,10 +108,10 @@ $bbox -20.432 -2.695 -25.946 11.584 8.836 2.803
 
 $include "v_m1911_bones.qci"
 
-$include "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\ins2_bones_follow_sandstorm.qci"
-$include "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\ins2_attachment_bones.qci"
+$include "..\..\..\ins2_bones_follow_sandstorm.qci"
+$include "..\..\..\ins2_attachment_bones.qci"
 
-$include "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\sandstorm_deltas_macros.qci"
+$include "..\..\..\sandstorm_deltas_macros.qci"
 
 $definebone "A_Suppressor" "b_wpn_barrel" 0 -4.25 0.61 0 180 0 0 0 0 0 0 0
 $bonemerge "A_Suppressor"
@@ -119,6 +119,9 @@ $bonemerge "A_Suppressor"
 $definebone "A_UnderBarrel" "b_wpn" 0 -3.075 -0.52 0 -90 0 0 0 0 0 0 0
 $bonemerge "A_UnderBarrel"
 
+
+// IK - inverse kinematics - needed for all sort of anims - makes the hands follow the gun
+$include "..\..\..\sandstorm_hand_ik.qci"
 
 $weightlist "weights_empty" {
 	"b_root" 0
@@ -422,17 +425,9 @@ $sequence "base_idle" {
 	activity "ACT_VM_IDLE" 1
 	a_idle
 	loop
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
 }
-
-// $sequence "base_ready" {
-	// "anims\an_1p_m1911_b_ready_shortened.smd"
-	// activity "ACT_VM_READY" 1
-	// { event 5004 0 "Universal.PistolDraw" }
-	// { event 5004 23 "Weapon_M1911.Boltback" }
-	// { event 5004 33 "Weapon_M1911.Boltrelease" }
-	// fps 45
-	// snap
-// }
 
 $sequence "base_ready" {
 	"anims\an_1p_m1911_b_ready.smd"
@@ -444,6 +439,8 @@ $sequence "base_ready" {
 	{ event 5004 99 "Weapon_M1911.Boltrelease" }
 	fps 36
 	snap
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
 }
 
 $animation "a_draw_test" "anims\an_1p_m1911_b_idle.smd" frames 0 35
@@ -453,6 +450,8 @@ $sequence "base_draw" {
 	activity "ACT_VM_DRAW" 1
 	{ event 5004 0 "Universal.PistolDraw" }
 	addlayer "base_draw_test"
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
 }
 
 $animation "a_holster_test" "anims\an_1p_m1911_b_idle.smd" frames 0 19
@@ -462,6 +461,8 @@ $sequence "base_holster" {
 	activity "ACT_VM_HOLSTER" 1
 	{ event 5004 0 "Universal.PistolHolster" }
 	addlayer "base_holster_test"
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
 }
 
 $animation "a_down_test" "anims\an_1p_m1911_b_idle.smd" frames 0 100
@@ -471,6 +472,8 @@ $sequence "base_down" {
 	activity "ACT_VM_DOWN" 1
 	addlayer "base_down_test"
 	loop
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
 }
 
 $animation "a_crawl_test" "anims\an_1p_m1911_b_idle.smd" frames 0 33
@@ -482,6 +485,8 @@ $sequence "base_crawl" {
 	{ event 5004 22 "Universal.LeftCrawl" }
 	addlayer "base_crawl_test"
 	loop
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
 }
 
 $animation "a_fire_test" "anims\an_1p_m1911_b_idle.smd" frames 0 40
@@ -496,6 +501,8 @@ $sequence "base_fire" {
 	blendlayer "delta_trigger" 0 1 10 10
 	blendlayer "delta_slideback" 1 2 3 4
 	snap
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
 }
 
 $sequence "base_fire2" {
@@ -507,6 +514,8 @@ $sequence "base_fire2" {
 	blendlayer "delta_trigger" 0 1 10 10
 	blendlayer "delta_slideback" 1 2 3 4
 	snap
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
 }
 
 $sequence "base_fire3" {
@@ -518,6 +527,8 @@ $sequence "base_fire3" {
 	blendlayer "delta_trigger" 0 1 10 10
 	blendlayer "delta_slideback" 1 2 3 4
 	snap
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
 }
 
 $sequence "base_firelast" {
@@ -530,6 +541,8 @@ $sequence "base_firelast" {
 	blendlayer "delta_slideback" 1 2 100 100
 	addlayer "delta_hidebullets"
 	snap
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
 }
 
 $animation "a_dryfire_test" "anims\an_1p_m1911_b_idle.smd" frames 0 20
@@ -542,6 +555,8 @@ $sequence "base_dryfire" {
 	addlayer "empty_layer"
 	blendlayer "delta_trigger" 0 1 10 10
 	// snap
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
 }
 
 $sequence "base_reload" {
@@ -553,11 +568,13 @@ $sequence "base_reload" {
 	{ event 5004 78 "Weapon_M1911.MagHit" }
 	{ event 46 49 "" }
 	fps 36
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
 }
 
 $sequence "base_reloadempty" {
 	"anims\an_1p_m1911_b_reload_empty_speed.smd"
-	activity "ACT_VM_RELOADEMPTY" 1	
+	activity "ACT_VM_RELOADEMPTY" 2
 	{ event 5004 10 "Weapon_M1911.Magrelease" }
 	{ event 5004 15 "Weapon_M1911.Magout" }
 	{ event 5004 45 "Weapon_M1911.Magin" }
@@ -565,6 +582,8 @@ $sequence "base_reloadempty" {
 	{ event 46 49 "" }
 	{ event 5004 65 "Weapon_M1911.Boltrelease" }
 	fps 33
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
 }
 
 $sequence "base_reload_extmag" {
@@ -576,6 +595,8 @@ $sequence "base_reload_extmag" {
 	{ event 5004 78 "Weapon_M1911.MagHit" }
 	{ event 46 49 "" }
 	fps 36
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
 }
 
 $sequence "base_reloadempty_extmag" {
@@ -588,6 +609,8 @@ $sequence "base_reloadempty_extmag" {
 	{ event 46 49 "" }
 	{ event 5004 65 "Weapon_M1911.Boltrelease" }
 	fps 33
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
 }
 
 $sequence "base_sprint" {
@@ -595,6 +618,8 @@ $sequence "base_sprint" {
 	activity "ACT_VM_SPRINT" 1
 	fps 25
 	loop
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
 }
 
 $sequence "empty_idle" {
@@ -602,6 +627,8 @@ $sequence "empty_idle" {
 	a_idle
 	addlayer "empty_layer"
 	loop
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
 }
 
 $sequence "empty_draw" {
@@ -610,6 +637,8 @@ $sequence "empty_draw" {
 	{ event 5004 0 "Universal.PistolDraw" }
 	addlayer "base_draw_test"
 	addlayer "empty_layer"
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
 }
 
 $sequence "empty_holster" {
@@ -618,6 +647,8 @@ $sequence "empty_holster" {
 	{ event 5004 0 "Universal.PistolHolster" }
 	addlayer "base_holster_test"
 	addlayer "empty_layer"
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
 }
 
 $sequence "empty_down" {
@@ -626,6 +657,8 @@ $sequence "empty_down" {
 	addlayer "base_down_test"
 	addlayer "empty_layer"
 	loop
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
 }
 
 $sequence "empty_crawl" {
@@ -636,6 +669,8 @@ $sequence "empty_crawl" {
 	addlayer "base_crawl_test"
 	addlayer "empty_layer"
 	loop
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
 }
 
 $sequence "empty_sprint" {
@@ -644,6 +679,8 @@ $sequence "empty_sprint" {
 	addlayer "empty_layer"
 	fps 25
 	loop
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
 }
 
 $sequence "iron_down" {
@@ -651,6 +688,8 @@ $sequence "iron_down" {
 	activity "ACT_VM_IDOWN" 1
 	addlayer "base_down_test"
 	loop
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
 }
 
 $sequence "empty_iron_down" {
@@ -659,6 +698,8 @@ $sequence "empty_iron_down" {
 	addlayer "base_down_test"
 	addlayer "empty_layer"
 	loop
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
 }
 
 $sequence "iron_fire_1" {
@@ -670,6 +711,8 @@ $sequence "iron_fire_1" {
 	blendlayer "delta_trigger" 0 1 10 10
 	blendlayer "delta_slideback" 1 2 3 4
 	snap
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
 }
 
 $sequence "iron_fire_2" {
@@ -681,6 +724,8 @@ $sequence "iron_fire_2" {
 	blendlayer "delta_trigger" 0 1 10 10
 	blendlayer "delta_slideback" 1 2 3 4
 	snap
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
 }
 
 $sequence "iron_fire_3" {
@@ -692,6 +737,8 @@ $sequence "iron_fire_3" {
 	blendlayer "delta_trigger" 0 1 10 10
 	blendlayer "delta_slideback" 1 2 3 4
 	snap
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
 }
 
 $sequence "iron_firelast" {
@@ -704,6 +751,8 @@ $sequence "iron_firelast" {
 	blendlayer "delta_slideback" 1 2 100 100
 	addlayer "delta_hidebullets"
 	snap
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
 }
 
 $sequence "iron_dryfire" {
@@ -714,6 +763,8 @@ $sequence "iron_dryfire" {
 	addlayer "empty_layer"
 	blendlayer "delta_trigger" 0 1 10 10
 	// snap
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
 }
 
 $sequence "iron_empty" {
@@ -721,45 +772,47 @@ $sequence "iron_empty" {
 	a_idle
 	addlayer "empty_layer"
 	loop
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
 }
 
 // nondefault shit
 
-$deltasequence "seq_base_fire" "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_pist\anims\an_1p_gen_pist_b_fire.smd"
-$deltasequence "seq_base_fire2" "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_pist\anims\an_1p_gen_pist_b_fire_2.smd"
-$deltasequence "seq_base_fire3" "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_pist\anims\an_1p_gen_pist_b_fire_3.smd"
+$deltasequence "seq_base_fire" "..\..\animations\gen_pist\anims\an_1p_gen_pist_b_fire.smd"
+$deltasequence "seq_base_fire2" "..\..\animations\gen_pist\anims\an_1p_gen_pist_b_fire_2.smd"
+$deltasequence "seq_base_fire3" "..\..\animations\gen_pist\anims\an_1p_gen_pist_b_fire_3.smd"
 
-$deltasequence "seq_iron_fire" "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_pist\anims\an_1p_gen_pist_b_iron_fire.smd"
-$deltasequence "seq_iron_fire2" "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_pist\anims\an_1p_gen_pist_b_iron_fire2.smd"
-$deltasequence "seq_iron_fire3" "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_pist\anims\an_1p_gen_pist_b_iron_fire3.smd"
+$deltasequence "seq_iron_fire" "..\..\animations\gen_pist\anims\an_1p_gen_pist_b_iron_fire.smd"
+$deltasequence "seq_iron_fire2" "..\..\animations\gen_pist\anims\an_1p_gen_pist_b_iron_fire2.smd"
+$deltasequence "seq_iron_fire3" "..\..\animations\gen_pist\anims\an_1p_gen_pist_b_iron_fire3.smd"
 
 
 $sequence "base_draw_test" predelta {
-	"F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_pist\anims\an_1p_gen_pist_b_draw.smd"
+	"..\..\animations\gen_pist\anims\an_1p_gen_pist_b_draw.smd"
 	weightlist "weights_draw"
 	hidden
 }
 
 $sequence "base_holster_test" predelta {
-	"F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_pist\anims\an_1p_gen_pist_b_holster.smd"
+	"..\..\animations\gen_pist\anims\an_1p_gen_pist_b_holster.smd"
 	weightlist "weights_holster"
 	hidden
 }
 
 $sequence "base_crawl_test" {
-	"F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_pist\anims\an_1p_gen_pist_m_crawl_n.smd"
+	"..\..\animations\gen_pist\anims\an_1p_gen_pist_m_crawl_n.smd"
 	weightlist "weights_sprint"
 	hidden
 }
 
 $sequence "base_dryfire_test" predelta {
-	"F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_pist\anims\an_1p_gen_pist_b_dryfire.smd"
+	"..\..\animations\gen_pist\anims\an_1p_gen_pist_b_dryfire.smd"
 	weightlist "weights_dryfire"
 	hidden
 }
 
 $sequence "base_down_test" predelta {
-	"F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_pist\anims\an_1p_gen_pist_b_down.smd"
+	"..\..\animations\gen_pist\anims\an_1p_gen_pist_b_down.smd"
 	weightlist "weights_down"
 	hidden
 }
@@ -779,4 +832,20 @@ $sequence "delta_slideback" delta {
 $sequence delta_trigger delta {
 	"anims\an_1p_m1911_b_fire_trigger.smd"
 	weightlist "weights_trigger"
+}
+
+// secret
+
+$sequence "base_reloadempty_rare" {
+	"anims\an_1p_m1911_b_reload_empty_rare.smd"
+	activity "ACT_VM_RELOADEMPTY" 1
+	{ event 5004 10 "Weapon_M1911.Magrelease" }
+	{ event 5004 15 "Weapon_M1911.Magout" }
+	{ event 5004 53 "Weapon_M1911.Magin" }
+	{ event 5004 58 "Weapon_M1911.MagHit" }
+	{ event 46 65 "" }
+	{ event 5004 80 "Weapon_M1911.Boltrelease" }
+	fps 36
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
 }

@@ -353,7 +353,7 @@ $sequence delta_foregrip delta {
 	ikrule lhand touch "b_wpn" usesource
 }
 
-$animation a_delta_eotech "anims\optic_base.smd" frames 0 0 subtract idle 0 origin 0 -2.5 1.44
+$animation a_delta_eotech "anims\optic_base.smd" frames 0 0 subtract idle 0 origin 0 -2.5 1.38
 $sequence delta_eotech delta a_delta_eotech
 
 $animation a_delta_kobra "anims\optic_base.smd" frames 0 0 subtract idle 0 origin 0 -2.5 1.16
@@ -1055,10 +1055,3 @@ $sequence "delta_ik_dep_iron_fire_2" delta a_ik_dep_iron_fire_2 weightlist "weig
 
 $animation a_ik_dep_iron_fire_3 "..\..\animations\gen_rif\anims\AN_1P_GEN_RIF_DEP_IRON_Fire3.smd"
 $sequence "delta_ik_dep_iron_fire_3" delta a_ik_dep_iron_fire_3 weightlist "weights_wpnonly"
-
-
-// test
-
-// magnifier open
-// $animation a_ik_toggle_magnifier_open "..\..\animations\gen_rif\anims\AN_1P_GEN_RIF_B_ToggleScope_In.smd" subtract "seq_gen_idle" 0
-// $sequence "delta_ik_toggle_magnifier_open" delta a_ik_toggle_magnifier_open

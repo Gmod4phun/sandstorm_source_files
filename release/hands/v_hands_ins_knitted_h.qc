@@ -2,21 +2,16 @@
 
 $modelname "weapons\v_hands_ins_h.mdl"
 
-$include "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\unreal_scale.qci"
+$include "..\..\unreal_scale.qci"
 
 $bodygroup "gloves"
 {
-	studio "SKM_CH_1P_INS_Knitted_ML.smd"
-}
-
-$bodygroup "hands"
-{
-	studio "SKM_CH_1P_SH_ARM_Bare_Gloves_ML.smd"
+	studio "gloves\knitted\SKM_CH_1P_INS_Knitted_ML.smd"
 }
 
 $bodygroup "sleeves"
 {
-	studio "sleeves\SKM_CH_1P_SEC_TORSO_TacticalCombatShirt_Bigger_ML.smd"
+	studio "sleeves\tracktop\SKM_CH_1P_INS_Tracktop_ML.smd"
 }
 
 
@@ -28,8 +23,8 @@ $illumposition 0 0 0
 
 $cdmaterials "models\weapons\ins2_sandstorm\"
 
-$include "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\rename_sandstorm_to_ins2.qci"
+$include "..\..\rename_sandstorm_to_ins2.qci"
 
 $sequence "idle" {
-	"SKM_CH_1P_INS_Knitted_ML.smd"
+	"gloves\knitted\SKM_CH_1P_INS_Knitted_ML.smd"
 }
