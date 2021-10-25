@@ -1,3 +1,6 @@
+// IK - inverse kinematics - needed for all sort of anims - makes the hands follow the gun
+$include "..\..\..\sandstorm_hand_ik.qci"
+
 $weightlist "weights_foregrip" {
 	"b_root" 0
 	"b_wpn" 0
@@ -20,6 +23,146 @@ $weightlist "weights_trigger" {
 	"b_ch_r_finger_11" 1
 	"A_Suppressor" 0
 	"A_LaserFlashlight" 0
+}
+
+$weightlist "weights_wpnonly" {
+	"b_root" 0
+	"b_wpn" 1
+	"b_wpn_bolt" 0
+	// "b_wpn_sliderelease" 0
+	"b_wpn_eject" 0
+	"b_wpn_fireselect" 0
+	"b_wpn_magrelease" 0
+	"b_wpn_muzzle" 0
+	"b_wpn_spec_1" 0
+	"b_wpn_spec_2" 0
+	"b_wpn_trigger" 0
+	"ik_hand_wpn_l" 0
+	"ik_hand_wpn_r" 0
+	"b_wpn_stock" 0
+	// "b_wpn_chargehandle" 0
+	"b_wpn_mag" 0
+	"b_wpn_mag_b1" 0
+	"b_wpn_mag_b2" 0
+	// "b_wpn_mag_follow" 0
+	"A_Suppressor" 0
+	"A_LaserFlashlight" 0
+	"A_Foregrip" 0
+	"A_Optic" 0
+	// "A_Modkit" 0
+	"b_wpn_bipod" 0
+	"b_wpn_bipod_base" 0
+	"b_wpn_optic" 0
+	// "b_wpn_foregrip" 0
+	"b_camera" 1
+	// "b_wpn_gl" 0
+	// "b_wpn_gl_round" 0
+	"b_wpn_handguard" 0
+	"b_wpn_handguard_railed" 0
+	"b_wpn_flash" 0
+	"b_wpn_suppressor" 0
+	"b_wpn_optic" 0
+}
+
+$weightlist "weights_delta_wpn_arms" {
+	"b_root" 1
+	"b_wpn" 1
+	"b_ch_l_finger_00" 0
+	"b_ch_l_finger_10" 0
+	"b_ch_l_finger_20" 0
+	"b_ch_l_finger_30" 0
+	"b_ch_l_finger_40" 0
+	"b_ch_r_finger_00" 0
+	"b_ch_r_finger_10" 0
+	"b_ch_r_finger_20" 0
+	"b_ch_r_finger_30" 0
+	"b_ch_r_finger_40" 0
+	"b_camera" 1
+	"b_wpn_optic" 0
+	"b_wpn_muzzle" 0
+	// "b_wpn_gl" 0
+	"b_wpn_handguard" 0
+	"b_wpn_handguard_railed" 0
+	"b_wpn_flash" 0
+	"b_wpn_suppressor" 0
+	"b_wpn_optic" 0
+}
+
+$weightlist "weights_boltrelease" {
+	"b_root" 0
+	// "b_ch_middle" 1
+	"b_wpn" 1
+	"b_wpn_bolt" 1
+	// "b_wpn_sliderelease" 1
+	"b_wpn_eject" 0
+	"b_wpn_fireselect" 0
+	"b_wpn_magrelease" 0
+	"b_wpn_muzzle" 0
+	"b_wpn_spec_1" 0
+	"b_wpn_spec_2" 0
+	"b_wpn_trigger" 0
+	"ik_hand_wpn_l" 0
+	"ik_hand_wpn_r" 0
+	"b_wpn_stock" 0
+	// "b_wpn_chargehandle" 1
+	"b_wpn_mag" 0
+	"b_wpn_mag_b1" 0
+	"b_wpn_mag_b2" 0
+	// "b_wpn_mag_follow" 0
+	"A_Suppressor" 0
+	"A_LaserFlashlight" 0
+	"A_Foregrip" 0
+	"A_Optic" 0
+	// "A_Modkit" 0
+	"b_wpn_bipod" 0
+	"b_wpn_bipod_base" 0
+	"b_wpn_optic" 0
+	// "b_wpn_foregrip" 0
+	"b_ch_r_clavical" 1
+	"b_ch_l_clavical" 0
+	"b_ch_r_upperarm" 1
+	"b_ch_l_upperarm" 1
+	// "b_ch_r_finger_00" 0
+	// "b_ch_r_finger_10" 0
+	// "b_ch_r_finger_20" 0
+	// "b_ch_r_finger_30" 0
+	// "b_ch_r_finger_40" 0
+	"b_ch_l_finger_00" 0
+	"b_ch_l_finger_10" 0
+	"b_ch_l_finger_20" 0
+	"b_ch_l_finger_30" 0
+	"b_ch_l_finger_40" 0
+	// "b_ch_l_finger_01" 0
+	// "b_ch_l_finger_11" 0
+	// "b_ch_l_finger_21" 0
+	// "b_ch_l_finger_31" 0
+	// "b_ch_l_finger_41" 0
+	"b_camera" 1
+	// "b_wpn_gl" 0
+	// "b_wpn_gl_round" 0
+	"b_wpn_handguard" 0
+	"b_wpn_handguard_railed" 0
+	"b_wpn_flash" 0
+	"b_wpn_suppressor" 0
+	"b_wpn_optic" 0
+}
+
+$weightlist "weights_r_upperarm" {
+	"b_root" 0
+	"b_wpn" 0
+	"b_ch_r_upperarm" 1
+	"b_ch_r_forearm" 0
+	"b_ch_l_upperarm" 0
+	"b_ch_l_forearm" 0
+}
+
+$weightlist "weights_l_upperarm" {
+	"b_root" 0
+	"b_wpn" 0
+	"b_ch_r_upperarm" 0
+	"b_ch_r_forearm" 0
+	"b_ch_l_upperarm" 1
+	"b_ch_l_forearm" 0
 }
 
 $weightlist "weights_deployed" {
@@ -48,20 +191,31 @@ $weightlist "weights_nobipod" {
 	"b_wpn_bipod_base" 0
 }
 
+
+// sequences
+
+$definemacro macro_idlesequence \\
+"anims\AN_1P_Galil_B_Idle.smd"
+
+$definemacro macro_fire_trigger \\
+blendlayer "delta_trigger" 0 1 10 10
+
+$definemacro macro_fire_bolt \\
+blendlayer "delta_boltback" 1 2 3 4
+
+
 $sequence "menu" {
-	"anims\AN_1P_Galil_B_menu_custom.smd"
+	$macro_idlesequence
 	activity "ACT_VM_MENU" 1
+	origin -2.5 -11.5 -2.5
 }
 
 $sequence "idle" {
-	"anims\AN_1P_Galil_B_Idle.smd"
+	$macro_idlesequence
 }
 
 $animation a_delta_iron "anims\delta_iron.smd" subtract idle 0
-
-$sequence delta_iron delta {
-	a_delta_iron
-}
+$sequence delta_iron delta a_delta_iron
 
 $animation a_delta_foregrip "anims\AN_1P_Galil_FG_Reload.smd" frames 0 0 subtract idle 0
 
@@ -71,6 +225,7 @@ $sequence delta_foregrip delta {
 	addlayer "delta_handguard_railed"
 	fadein 0
 	snap
+	ikrule lhand touch "b_wpn" usesource
 }
 
 $animation a_delta_eotech "anims\delta_eotech.smd" subtract idle 0
@@ -130,68 +285,101 @@ $sequence delta_deployed delta {
 }
 
 $sequence "base_idle" {
-	"anims\AN_1P_Galil_B_Idle.smd"
+	$macro_idlesequence
 	activity "ACT_VM_IDLE" 1
 	loop
+	ikrule rhand touch "b_wpn" usesource
 }
 
 $sequence "base_ready" {
-	"anims\AN_1P_Galil_B_Ready_Custom.smd"
+	$macro_idlesequence
 	activity "ACT_VM_READY" 1
 	{ event 5004 0 "Universal.Draw" }
-	{ event 5004 20 "Weapon_Galil.Rattle" }
-	{ event 5004 48 "Weapon_Galil.Boltback" }
-	{ event 5004 58 "Weapon_Galil.Boltrelease" }
-	{ event 5004 80 "Universal.LeanIn" }
-	fps 38
+	{ event 5004 3 "Weapon_Galil.Rattle" }
+	{ event 5004 12 "Weapon_Galil.Boltback" }
+	{ event 5004 22 "Weapon_Galil.Boltrelease" }
+	{ event 5004 40 "Universal.LeanIn" }
+	blendlayer "delta_idle_offset_ready" -1 -1 0 17 spline
+	blendlayer "delta_ik_boltrelease" 0 0 60 60
+	frames 0 60
+	fps 34
 	snap
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
 }
 
 $sequence "base_draw" {
-	"anims\AN_1P_Galil_B_Draw_Custom.smd"
+	$macro_idlesequence
 	activity "ACT_VM_DRAW" 1
 	{ event 5004 0 "Universal.Draw" }
-	fps 31
+	addlayer "delta_ik_draw"
+	frames 0 41
+	fps 34
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
 }
 
 $sequence "base_holster" {
-	"anims\AN_1P_Galil_B_Holster_Custom.smd"
+	$macro_idlesequence
 	activity "ACT_VM_HOLSTER" 1
 	{ event 5004 0 "Universal.Holster" }
+	addlayer "delta_ik_holster"
+	frames 0 20
 	fps 34
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
 }
 
 $sequence "base_crawl" {
-	"anims\AN_1P_Galil_B_Crawl_Custom.smd"
+	$macro_idlesequence
 	activity "ACT_VM_CRAWL" 1
 	{ event 5004 0 "Universal.LeftCrawl" }
 	{ event 5004 22 "Universal.RightCrawl" }
+	addlayer "delta_ik_crawl"
+	// addlayer "delta_idle_offset_back"
 	loop
+	frames 0 51
 	fps 30
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
 }
 
 $sequence "base_down" {
-	"anims\AN_1P_Galil_B_Down_Custom.smd"
+	$macro_idlesequence
 	activity "ACT_VM_DOWN" 1
+	addlayer "delta_ik_down"
 	loop
+	frames 0 1
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
 }
 
 $sequence "base_fire" {
-	"anims\AN_1P_Galil_B_Fire_Custom.smd"
+	$macro_idlesequence
 	activity "ACT_VM_PRIMARYATTACK" 1
 	{ event AE_MUZZLEFLASH 0 "" }
-	{ event AE_CL_CREATE_PARTICLE_BRASS 0 "" }
-	blendlayer "delta_trigger" 0 1 10 10
-	blendlayer "delta_boltback" 1 2 3 4
+	{ event AE_CL_CREATE_PARTICLE_BRASS 2 "" }
+	$macro_fire_trigger
+	$macro_fire_bolt
 	snap
+	addlayer "delta_ik_fire_1"
+	frames 0 41
+	fps 40
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
 }
 
 $sequence "base_dryfire" {
-	"anims\AN_1P_Galil_B_Dryfire_Custom.smd"
+	$macro_idlesequence
 	activity "ACT_VM_DRYFIRE" 1
 	{ event 5004 0 "Weapon_Galil.Empty" }
-	blendlayer "delta_trigger" 0 1 10 10
+	$macro_fire_trigger
 	snap
+	addlayer "delta_ik_dryfire"
+	frames 0 21
+	fps 40
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
 }
 
 $sequence "base_fireselect" {
@@ -199,6 +387,8 @@ $sequence "base_fireselect" {
 	activity "ACT_VM_FIREMODE" 1
 	{ event 5004 13 "Weapon_Galil.ROF" }
 	snap
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
 }
 
 $sequence "base_reload" {
@@ -212,6 +402,8 @@ $sequence "base_reload" {
 	{ event 46 80 "" }
 	{ event 5004 86 "Universal.LeanIn" }
 	fps 30.5
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
 }
 
 $sequence "base_reloadempty" {
@@ -227,6 +419,8 @@ $sequence "base_reloadempty" {
 	{ event 5004 146 "Weapon_Galil.Boltrelease" }
 	{ event 5004 162 "Universal.LeanIn" }
 	fps 36
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
 }
 
 $sequence "base_reload_drum" {
@@ -240,6 +434,8 @@ $sequence "base_reload_drum" {
 	{ event 46 116 "" }
 	{ event 5004 145 "Universal.LeanIn" }
 	fps 31.8
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
 }
 
 $sequence "base_reloadempty_drum" {
@@ -255,57 +451,89 @@ $sequence "base_reloadempty_drum" {
 	{ event 5004 170 "Weapon_Galil.Boltrelease" }
 	{ event 5004 195 "Universal.LeanIn" }
 	fps 28.8
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
 }
 
 $sequence "base_sprint" {
-	"anims\AN_1P_Galil_B_Sprint_Custom.smd"
+	$macro_idlesequence
 	activity "ACT_VM_SPRINT" 1
+	addlayer "delta_ik_sprint"
 	loop
-	fps 31.5
+	frames 0 26
+	fps 30
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
 }
 
 $sequence "iron_down" {
-	"anims\AN_1P_Galil_B_Iron_Down_Custom.smd"
+	$macro_idlesequence
 	activity "ACT_VM_IDOWN" 1
+	addlayer "delta_ik_iron_down"
+	// addlayer "delta_idle_offset_back"
 	loop
+	frames 0 1
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
+	// origin 0 8 0
 }
 
 $sequence "iron_fire_a" {
-	"anims\AN_1P_Galil_B_Iron_Fire_a_Custom.smd"
+	$macro_idlesequence
 	activity "ACT_VM_ISHOOT" 1
 	{ event AE_MUZZLEFLASH 0 "" }
-	{ event AE_CL_CREATE_PARTICLE_BRASS 0 "" }
-	blendlayer "delta_trigger" 0 1 10 10
-	blendlayer "delta_boltback" 1 2 3 4
+	{ event AE_CL_CREATE_PARTICLE_BRASS 2 "" }
+	$macro_fire_trigger
+	$macro_fire_bolt
 	snap
+	addlayer "delta_ik_iron_fire_1"
+	frames 0 41
+	fps 40
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
 }
 
 $sequence "iron_fire_b" {
-	"anims\AN_1P_Galil_B_Iron_Fire_b_Custom.smd"
+	$macro_idlesequence
 	activity "ACT_VM_ISHOOT" 1
 	{ event AE_MUZZLEFLASH 0 "" }
-	{ event AE_CL_CREATE_PARTICLE_BRASS 0 "" }
-	blendlayer "delta_trigger" 0 1 10 10
-	blendlayer "delta_boltback" 1 2 3 4
+	{ event AE_CL_CREATE_PARTICLE_BRASS 2 "" }
+	$macro_fire_trigger
+	$macro_fire_bolt
 	snap
+	addlayer "delta_ik_iron_fire_2"
+	frames 0 41
+	fps 40
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
 }
 
 $sequence "iron_fire_c" {
-	"anims\AN_1P_Galil_B_Iron_Fire_a_Custom.smd"
+	$macro_idlesequence
 	activity "ACT_VM_ISHOOT" 1
 	{ event AE_MUZZLEFLASH 0 "" }
-	{ event AE_CL_CREATE_PARTICLE_BRASS 0 "" }
-	blendlayer "delta_trigger" 0 1 10 10
-	blendlayer "delta_boltback" 1 2 3 4
+	{ event AE_CL_CREATE_PARTICLE_BRASS 2 "" }
+	$macro_fire_trigger
+	$macro_fire_bolt
 	snap
+	addlayer "delta_ik_iron_fire_3"
+	frames 0 41
+	fps 40
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
 }
 
 $sequence "iron_dryfire" {
-	"anims\AN_1P_Galil_B_Dryfire_Custom.smd"
+	$macro_idlesequence
 	activity "ACT_VM_ISHOOTDRY" 1
 	{ event 5004 0 "Weapon_Galil.Empty" }
-	blendlayer "delta_trigger" 0 1 10 10
+	$macro_fire_trigger
 	snap
+	addlayer "delta_ik_iron_dryfire"
+	frames 0 21
+	fps 40
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
 }
 
 $sequence "iron_fireselect" {
@@ -313,80 +541,112 @@ $sequence "iron_fireselect" {
 	activity "ACT_VM_IFIREMODE" 1
 	{ event 5004 13 "Weapon_Galil.ROF" }
 	snap
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
 }
 
 $sequence "foregrip_ready" {
-	"anims\AN_1P_Galil_FG_Ready_Custom.smd"
+	$macro_idlesequence
 	activity "ACT_VM_READY_FOREGRIP" 1
 	{ event 5004 0 "Universal.Draw" }
-	{ event 5004 20 "Weapon_Galil.Rattle" }
-	{ event 5004 48 "Weapon_Galil.Boltback" }
-	{ event 5004 58 "Weapon_Galil.Boltrelease" }
-	{ event 5004 80 "Universal.LeanIn" }
-	addlayer "delta_handguard_railed"
-	fps 38
+	{ event 5004 3 "Weapon_Galil.Rattle" }
+	{ event 5004 12 "Weapon_Galil.Boltback" }
+	{ event 5004 22 "Weapon_Galil.Boltrelease" }
+	{ event 5004 40 "Universal.LeanIn" }
+	blendlayer "delta_idle_offset_ready" -1 -1 0 17 spline
+	blendlayer "delta_ik_boltrelease" 0 0 60 60
+	frames 0 60
+	fps 34
 	snap
+	ikrule rhand touch "b_wpn" usesource
+	// ikrule lhand touch "b_wpn" usesource
+	addlayer "delta_foregrip"
 }
 
 $sequence "foregrip_draw" {
-	"anims\AN_1P_Galil_B_Draw_Custom.smd"
+	$macro_idlesequence
 	activity "ACT_VM_DRAW_FOREGRIP" 1
 	{ event 5004 0 "Universal.Draw" }
+	addlayer "delta_ik_draw"
+	frames 0 41
+	fps 34
+	ikrule rhand touch "b_wpn" usesource
 	addlayer "delta_foregrip"
-	fps 31
 }
 
 $sequence "foregrip_holster" {
-	"anims\AN_1P_Galil_B_Holster_Custom.smd"
+	$macro_idlesequence
 	activity "ACT_VM_HOLSTER_FOREGRIP" 1
 	{ event 5004 0 "Universal.Holster" }
-	addlayer "delta_foregrip"
+	addlayer "delta_ik_holster"
+	frames 0 20
 	fps 34
-	fadein 0
+	ikrule rhand touch "b_wpn" usesource
+	addlayer "delta_foregrip"
 }
 
 $sequence "foregrip_crawl" {
-	"anims\AN_1P_Galil_B_Crawl_Custom.smd"
+	$macro_idlesequence
 	activity "ACT_VM_CRAWL_FOREGRIP" 1
 	{ event 5004 0 "Universal.LeftCrawl" }
 	{ event 5004 22 "Universal.RightCrawl" }
-	addlayer "delta_foregrip"
+	addlayer "delta_ik_crawl"
+	// addlayer "delta_idle_offset_back"
 	loop
+	frames 0 51
+	fps 30
+	ikrule rhand touch "b_wpn" usesource
+	addlayer "delta_foregrip"
 }
 
 $sequence "foregrip_down" {
-	"anims\AN_1P_Galil_B_Down_Custom.smd"
+	$macro_idlesequence
 	activity "ACT_VM_DOWN_FOREGRIP" 1
-	addlayer "delta_foregrip"
+	addlayer "delta_ik_down"
 	loop
+	frames 0 1
+	ikrule rhand touch "b_wpn" usesource
+	addlayer "delta_foregrip"
 }
 
 $sequence "foregrip_fire" {
-	"anims\AN_1P_Galil_B_Fire_Custom.smd"
+	$macro_idlesequence
 	activity "ACT_VM_PRIMARYATTACK_FOREGRIP" 1
 	{ event AE_MUZZLEFLASH 0 "" }
-	{ event AE_CL_CREATE_PARTICLE_BRASS 0 "" }
-	blendlayer "delta_trigger" 0 1 10 10
-	blendlayer "delta_boltback" 1 2 3 4
-	addlayer "delta_foregrip"
+	{ event AE_CL_CREATE_PARTICLE_BRASS 2 "" }
+	$macro_fire_trigger
+	$macro_fire_bolt
 	snap
+	addlayer "delta_ik_fire_1"
+	frames 0 41
+	fps 40
+	ikrule rhand touch "b_wpn" usesource
+	// ikrule lhand touch "b_wpn" usesource
+	addlayer "delta_foregrip"
 }
 
 $sequence "foregrip_dryfire" {
-	"anims\AN_1P_Galil_B_Dryfire_Custom.smd"
+	$macro_idlesequence
 	activity "ACT_VM_DRYFIRE_FOREGRIP" 1
-	{ event 5004 0 "Weapon_Galil.Empty" }
-	blendlayer "delta_trigger" 0 1 10 10
-	addlayer "delta_foregrip"
+	{ event 5004 0 "Weapon_M16A4.Empty" }
+	$macro_fire_trigger
 	snap
+	addlayer "delta_ik_dryfire"
+	frames 0 21
+	fps 40
+	ikrule rhand touch "b_wpn" usesource
+	// ikrule lhand touch "b_wpn" usesource
+	addlayer "delta_foregrip"
 }
 
 $sequence "foregrip_fireselect" {
-	"anims\AN_1P_Galil_B_FS_AutoSemi_Nobend.smd"
+	"anims\AN_1P_Galil_B_FS_AutoSemi.smd"
 	activity "ACT_VM_FIREMODE_FOREGRIP" 1
 	{ event 5004 13 "Weapon_Galil.ROF" }
-	addlayer "delta_foregrip"
 	snap
+	ikrule rhand touch "b_wpn" usesource
+	// ikrule lhand touch "b_wpn" usesource
+	addlayer "delta_foregrip"
 }
 
 $sequence "foregrip_reload" {
@@ -402,6 +662,8 @@ $sequence "foregrip_reload" {
 	addlayer "delta_handguard_railed"
 	fps 30.5
 	fadein 0
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
 }
 
 $sequence "foregrip_reloadempty" {
@@ -419,6 +681,8 @@ $sequence "foregrip_reloadempty" {
 	addlayer "delta_handguard_railed"
 	fps 36
 	fadein 0
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
 }
 
 $sequence "foregrip_reload_drum" {
@@ -434,6 +698,8 @@ $sequence "foregrip_reload_drum" {
 	addlayer "delta_handguard_railed"
 	fps 31.8
 	fadein 0
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
 }
 
 $sequence "foregrip_reloadempty_drum" {
@@ -451,81 +717,116 @@ $sequence "foregrip_reloadempty_drum" {
 	addlayer "delta_handguard_railed"
 	fps 28.8
 	fadein 0
+	ikrule rhand touch "b_wpn" usesource
+	ikrule lhand touch "b_wpn" usesource
 }
 
 $sequence "foregrip_sprint" {
-	"anims\AN_1P_Galil_B_Sprint_Custom.smd"
+	$macro_idlesequence
 	activity "ACT_VM_SPRINT_FOREGRIP" 1
-	addlayer "delta_foregrip"
+	addlayer "delta_ik_sprint"
 	loop
-	fps 31.5
+	frames 0 26
+	fps 30
+	ikrule rhand touch "b_wpn" usesource
+	// ikrule lhand touch "b_wpn" usesource
+	addlayer "delta_foregrip"
 }
 
 $sequence "foregrip_iron_down" {
-	"anims\AN_1P_Galil_B_Iron_Down_Custom.smd"
+	$macro_idlesequence
 	activity "ACT_VM_IDOWN_FOREGRIP" 1
-	addlayer "delta_foregrip"
+	addlayer "delta_ik_iron_down"
+	// addlayer "delta_idle_offset_back"
 	loop
+	frames 0 1
+	ikrule rhand touch "b_wpn" usesource
+	// ikrule lhand touch "b_wpn" usesource
+	// origin 0 8 0
+	addlayer "delta_foregrip" // we hold this one normally by the handguard
 }
 
 $sequence "foregrip_iron_fire_a" {
-	"anims\AN_1P_Galil_B_Iron_Fire_a_Custom.smd"
+	$macro_idlesequence
 	activity "ACT_VM_ISHOOT_FOREGRIP" 1
 	{ event AE_MUZZLEFLASH 0 "" }
-	{ event AE_CL_CREATE_PARTICLE_BRASS 0 "" }
-	blendlayer "delta_trigger" 0 1 10 10
-	blendlayer "delta_boltback" 1 2 3 4
-	addlayer "delta_foregrip"
+	{ event AE_CL_CREATE_PARTICLE_BRASS 2 "" }
+	$macro_fire_trigger
+	$macro_fire_bolt
 	snap
+	addlayer "delta_ik_iron_fire_1"
+	frames 0 41
+	fps 40
+	ikrule rhand touch "b_wpn" usesource
+	// ikrule lhand touch "b_wpn" usesource
+	addlayer "delta_foregrip"
 }
 
 $sequence "foregrip_iron_fire_b" {
-	"anims\AN_1P_Galil_B_Iron_Fire_b_Custom.smd"
+	$macro_idlesequence
 	activity "ACT_VM_ISHOOT_FOREGRIP" 1
 	{ event AE_MUZZLEFLASH 0 "" }
-	{ event AE_CL_CREATE_PARTICLE_BRASS 0 "" }
-	blendlayer "delta_trigger" 0 1 10 10
-	blendlayer "delta_boltback" 1 2 3 4
-	addlayer "delta_foregrip"
+	{ event AE_CL_CREATE_PARTICLE_BRASS 2 "" }
+	$macro_fire_trigger
+	$macro_fire_bolt
 	snap
+	addlayer "delta_ik_iron_fire_2"
+	frames 0 41
+	fps 40
+	ikrule rhand touch "b_wpn" usesource
+	// ikrule lhand touch "b_wpn" usesource
+	addlayer "delta_foregrip"
 }
 
 $sequence "foregrip_iron_fire_c" {
-	"anims\AN_1P_Galil_B_Iron_Fire_c_Custom.smd"
+	$macro_idlesequence
 	activity "ACT_VM_ISHOOT_FOREGRIP" 1
 	{ event AE_MUZZLEFLASH 0 "" }
-	{ event AE_CL_CREATE_PARTICLE_BRASS 0 "" }
-	blendlayer "delta_trigger" 0 1 10 10
-	blendlayer "delta_boltback" 1 2 3 4
-	addlayer "delta_foregrip"
+	{ event AE_CL_CREATE_PARTICLE_BRASS 2 "" }
+	$macro_fire_trigger
+	$macro_fire_bolt
 	snap
+	addlayer "delta_ik_iron_fire_3"
+	frames 0 41
+	fps 40
+	ikrule rhand touch "b_wpn" usesource
+	// ikrule lhand touch "b_wpn" usesource
+	addlayer "delta_foregrip"
 }
 
 $sequence "foregrip_iron_dryfire" {
-	"anims\AN_1P_Galil_B_Dryfire_Custom.smd"
+	$macro_idlesequence
 	activity "ACT_VM_ISHOOTDRY_FOREGRIP" 1
-	{ event 5004 0 "Weapon_Galil.Empty" }
-	blendlayer "delta_trigger" 0 1 10 10
-	addlayer "delta_foregrip"
+	{ event 5004 0 "Weapon_M16A4.Empty" }
+	$macro_fire_trigger
 	snap
+	addlayer "delta_ik_iron_dryfire"
+	frames 0 21
+	fps 40
+	ikrule rhand touch "b_wpn" usesource
+	// ikrule lhand touch "b_wpn" usesource
+	addlayer "delta_foregrip"
 }
 
 $sequence "foregrip_iron_fireselect" {
-	"anims\AN_1P_Galil_B_IRON_FS_AutoSemi_Nobend.smd"
+	"anims\AN_1P_Galil_B_IRON_FS_AutoSemi.smd"
 	activity "ACT_VM_IFIREMODE_FOREGRIP" 1
 	{ event 5004 13 "Weapon_Galil.ROF" }
-	addlayer "delta_foregrip"
 	snap
+	ikrule rhand touch "b_wpn" usesource
+	// ikrule lhand touch "b_wpn" usesource
+	addlayer "delta_foregrip"
 }
 
 // deployed
 
 $sequence "deployed_idle" {
-	"anims\AN_1P_Galil_B_Idle.smd"
+	$macro_idlesequence
 	activity "ACT_VM_IDLE_DEPLOYED" 1
 	addlayer "delta_deployed"
 	addlayer "delta_bipod"
 	loop
+	ikrule rhand touch "b_wpn" usesource 
 }
 
 $sequence "deployed_in" {
@@ -535,6 +836,7 @@ $sequence "deployed_in" {
 	{ event 5004 28 "Universal.BipodDeployEnd" }
 	blendlayer "delta_deployed" 35 40 100 100
 	fps 40
+	ikrule rhand touch "b_wpn" usesource 
 }
 
 $sequence "deployed_out" {
@@ -543,33 +845,37 @@ $sequence "deployed_out" {
 	{ event 5004 26 "Universal.BipodRetract" }
 	blendlayer "delta_deployed" -1 -1 6 16
 	fps 40
+	ikrule rhand touch "b_wpn" usesource 
 }
 
-$animation "a_dep_fire" "anims\AN_1P_Galil_B_Idle.smd" frames 0 41
-
 $sequence "deployed_fire" {
-	a_dep_fire
+	$macro_idlesequence
 	activity "ACT_VM_PRIMARYATTACK_DEPLOYED" 1
 	{ event AE_MUZZLEFLASH 0 "" }
-	{ event AE_CL_CREATE_PARTICLE_BRASS 0 "" }
-	addlayer "seq_gen_rif_dep_fire"
+	{ event AE_CL_CREATE_PARTICLE_BRASS 2 "" }
+	$macro_fire_trigger
+	$macro_fire_bolt
+	snap
+	addlayer "delta_ik_dep_fire_1"
+	frames 0 41
+	fps 40
+	ikrule rhand touch "b_wpn" usesource
 	addlayer "delta_deployed"
 	addlayer "delta_bipod"
-   	blendlayer "delta_trigger" 0 1 10 10
-	blendlayer "delta_boltback" 1 2 3 4
-	snap
-	fps 30
 }
 
 $sequence "deployed_dryfire" {
-	"anims\AN_1P_Galil_B_Dryfire_Custom.smd"
+	$macro_idlesequence
 	activity "ACT_VM_DRYFIRE_DEPLOYED" 1
-	{ event 5004 0 "Weapon_Galil.Empty" }
+	{ event 5004 0 "Weapon_SKS.Empty" }
+	$macro_fire_trigger
+	snap
+	addlayer "delta_ik_dryfire"
+	frames 0 21
+	fps 40
+	ikrule rhand touch "b_wpn" usesource
 	addlayer "delta_deployed"
 	addlayer "delta_bipod"
-	blendlayer "delta_trigger" 0 1 10 10
-	snap
-	fps 30
 }
 
 $sequence "deployed_fireselect" {
@@ -578,6 +884,7 @@ $sequence "deployed_fireselect" {
 	{ event 5004 13 "Weapon_Galil.ROF" }
 	snap
 	fps 30
+	ikrule rhand touch "b_wpn" usesource
 }
 
 $sequence "deployed_reload" {
@@ -592,6 +899,7 @@ $sequence "deployed_reload" {
 	{ event 5004 102 "Universal.LeanIn" }
 	snap
 	fps 32
+	ikrule rhand touch "b_wpn" usesource
 }
 
 $sequence "deployed_reload_empty" {
@@ -608,6 +916,7 @@ $sequence "deployed_reload_empty" {
 	{ event 5004 168 "Universal.LeanIn" }
 	snap
 	fps 34
+	ikrule rhand touch "b_wpn" usesource
 }
 
 $sequence "deployed_reload_drum" {
@@ -622,6 +931,7 @@ $sequence "deployed_reload_drum" {
 	{ event 5004 145 "Universal.LeanIn" }
 	snap
 	fps 31.8
+	ikrule rhand touch "b_wpn" usesource
 }
 
 $sequence "deployed_reload_empty_drum" {
@@ -638,74 +948,79 @@ $sequence "deployed_reload_empty_drum" {
 	{ event 5004 195 "Universal.LeanIn" }
 	snap
 	fps 28.8
+	ikrule rhand touch "b_wpn" usesource
 }
 
 $sequence "deployed_iron" {
-	"anims\AN_1P_Galil_B_Idle.smd"
+	$macro_idlesequence
 	activity "ACT_VM_IIDLE_DEPLOYED" 1
 	addlayer "delta_deployed"
 	addlayer "delta_bipod"
 	fps 30
 	loop
+	ikrule rhand touch "b_wpn" usesource
 }
-
-$animation "a_dep_fire_a" "anims\AN_1P_Galil_B_Idle.smd" frames 0 41
 
 $sequence "deployed_iron_fire_a" {
-	a_dep_fire_a
+	$macro_idlesequence
 	activity "ACT_VM_ISHOOT_DEPLOYED" 1
 	{ event AE_MUZZLEFLASH 0 "" }
-	{ event AE_CL_CREATE_PARTICLE_BRASS 0 "" }
-	addlayer "seq_gen_rif_dep_iron_fire1"
+	{ event AE_CL_CREATE_PARTICLE_BRASS 2 "" }
+	$macro_fire_trigger
+	$macro_fire_bolt
+	snap
+	addlayer "delta_ik_dep_iron_fire_1"
+	frames 0 41
+	fps 40
+	ikrule rhand touch "b_wpn" usesource
 	addlayer "delta_deployed"
 	addlayer "delta_bipod"
-	blendlayer "delta_trigger" 0 1 10 10
-	blendlayer "delta_boltback" 1 2 3 4
-	snap
-	fps 30
 }
-
-$animation "a_dep_fire_b" "anims\AN_1P_Galil_B_Idle.smd" frames 0 41
 
 $sequence "deployed_iron_fire_b" {
-	a_dep_fire_b
+	$macro_idlesequence
 	activity "ACT_VM_ISHOOT_DEPLOYED" 1
 	{ event AE_MUZZLEFLASH 0 "" }
-	{ event AE_CL_CREATE_PARTICLE_BRASS 0 "" }
-	addlayer "seq_gen_rif_dep_iron_fire1"
+	{ event AE_CL_CREATE_PARTICLE_BRASS 2 "" }
+	$macro_fire_trigger
+	$macro_fire_bolt
+	snap
+	addlayer "delta_ik_dep_iron_fire_2"
+	frames 0 41
+	fps 40
+	ikrule rhand touch "b_wpn" usesource
 	addlayer "delta_deployed"
 	addlayer "delta_bipod"
-	blendlayer "delta_trigger" 0 1 10 10
-	blendlayer "delta_boltback" 1 2 3 4
-	snap
-	fps 30
 }
 
-$animation "a_dep_fire_c" "anims\AN_1P_Galil_B_Idle.smd" frames 0 41
-
 $sequence "deployed_iron_fire_c" {
-	a_dep_fire_c
+	$macro_idlesequence
 	activity "ACT_VM_ISHOOT_DEPLOYED" 1
 	{ event AE_MUZZLEFLASH 0 "" }
-	{ event AE_CL_CREATE_PARTICLE_BRASS 0 "" }
-	addlayer "seq_gen_rif_dep_iron_fire1"
+	{ event AE_CL_CREATE_PARTICLE_BRASS 2 "" }
+	$macro_fire_trigger
+	$macro_fire_bolt
+	snap
+	addlayer "delta_ik_dep_iron_fire_3"
+	frames 0 41
+	fps 40
+	ikrule rhand touch "b_wpn" usesource
 	addlayer "delta_deployed"
 	addlayer "delta_bipod"
-	blendlayer "delta_trigger" 0 1 10 10
-	blendlayer "delta_boltback" 1 2 3 4
-	snap
-	fps 30
 }
 
 $sequence "deployed_iron_dryfire" {
-	"anims\AN_1P_Galil_B_Dryfire_Custom.smd"
+	$macro_idlesequence
 	activity "ACT_VM_ISHOOTDRY_DEPLOYED" 1
-	{ event 5004 0 "Weapon_Galil.Empty" }
+	{ event 5004 0 "Weapon_M16A4.Empty" }
+	$macro_fire_trigger
+	snap
+	addlayer "delta_ik_iron_dryfire"
+	frames 0 21
+	fps 40
+	ikrule rhand touch "b_wpn" usesource
 	addlayer "delta_deployed"
 	addlayer "delta_bipod"
-	blendlayer "delta_trigger" 0 1 10 10
-	snap
-	fps 30
 }
 
 $sequence "deployed_iron_fireselect" {
@@ -714,20 +1029,21 @@ $sequence "deployed_iron_fireselect" {
 	{ event 5004 13 "Weapon_Galil.ROF" }
 	snap
 	fps 30
+	ikrule rhand touch "b_wpn" usesource
 }
 
 
 // nonoriginal
 
-$animation "a_idle_empty" "anims\delta_boltback.smd" subtract "idle" 0 frames 0 1
+$animation "a_delta_boltback" "anims\delta_boltback.smd" subtract "idle" 0 frames 0 0
 
 $sequence "delta_boltback" delta {
-	a_idle_empty
+	a_delta_boltback
 	weightlist "weights_boltback"
 }
 
 $sequence delta_trigger delta {
-	"F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\weapons\AK74\anims\AN_1P_AK74_B_Fire_Trigger.smd"
+	"..\ak74\anims\AN_1P_AK74_B_Fire_Trigger.smd"
 	weightlist "weights_trigger"
 }
 
@@ -744,10 +1060,89 @@ $sequence "delta_handguard_railed" delta {
 	a_delta_handguard_railed
 }
 
-$deltasequence "seq_gen_rif_dryfire" "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_rif\anims\an_1p_gen_rif_b_dryfire.smd"
-$deltasequence "seq_gen_rif_iron_dryfire" "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_rif\anims\an_1p_gen_rif_b_iron_dryfire.smd"
 
-$deltasequence "seq_gen_rif_dep_fire" "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_rif\anims\AN_1P_GEN_RIF_DEP_Fire.smd"
+// generic idle sequence
+$sequence "seq_gen_idle" "..\..\animations\gen_rif\anims\AN_1P_GEN_RIF_B_Idle.smd"
 
-$deltasequence "seq_gen_rif_dep_iron_fire1" "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_rif\anims\AN_1P_GEN_RIF_DEP_IRON_Fire.smd"
-$deltasequence "seq_gen_rif_dep_iron_fire2" "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_rif\anims\AN_1P_GEN_RIF_DEP_IRON_Fire2.smd"
+// idle sequence weapon bone offsets
+$sequence "delta_idle_offset_back" delta "..\..\animations\gen_rif\anims\AN_1P_GEN_RIF_B_Idle_Offset_Back.smd" subtract "seq_gen_idle" 0 weightlist "weights_wpnonly"
+$sequence "delta_idle_offset_ready" delta "..\..\animations\gen_rif\anims\AN_1P_GEN_RIF_B_Idle_Offset_Ready.smd" subtract "seq_gen_idle" 0 weightlist "weights_delta_wpn_arms"
+$sequence "delta_idle_offset_r_upperarm_forward" delta "..\..\animations\gen_rif\anims\AN_1P_GEN_RIF_B_Idle_Offset_Upperarms_Forward.smd" subtract "seq_gen_idle" 0 weightlist "weights_r_upperarm"
+$sequence "delta_idle_offset_l_upperarm_forward" delta "..\..\animations\gen_rif\anims\AN_1P_GEN_RIF_B_Idle_Offset_Upperarms_Forward.smd" subtract "seq_gen_idle" 0 weightlist "weights_l_upperarm"
+
+// boltrelease
+$animation a_ik_boltrelease "anims\AN_1P_Galil_B_Reload_Empty_Boltpull.smd"
+$sequence "delta_ik_boltrelease" predelta a_ik_boltrelease weightlist "weights_boltrelease"
+
+// $animation a_ik_fg_boltrelease "anims\AN_1P_Galil_FG_Reload_Empty_Boltpull.smd"
+// $sequence "delta_ik_fg_boltrelease" predelta a_ik_fg_boltrelease weightlist "weights_boltrelease"
+
+// draw
+$animation a_ik_draw "..\..\animations\gen_rif\anims\AN_1P_GEN_RIF_B_Draw.smd"
+$sequence "delta_ik_draw" delta a_ik_draw weightlist "weights_wpnonly"
+
+// holster
+$animation a_ik_holster "..\..\animations\gen_rif\anims\AN_1P_GEN_RIF_B_Holster.smd"
+$sequence "delta_ik_holster" delta a_ik_holster weightlist "weights_wpnonly"
+
+// sprint
+$animation a_ik_sprint "..\..\animations\gen_rif\anims\AN_1P_GEN_RIF_B_Sprint.smd" subtract "seq_gen_idle" 0
+$sequence "delta_ik_sprint" delta a_ik_sprint weightlist "weights_delta_wpn_arms" loop fixuploop -1 1
+
+// crawl
+$animation a_ik_crawl "..\..\animations\gen_rif\anims\AN_1P_GEN_RIF_B_Crawl.smd" subtract "seq_gen_idle" 0
+$sequence "delta_ik_crawl" delta a_ik_crawl weightlist "weights_delta_wpn_arms" loop fixuploop -1 1
+
+// fire
+$animation a_ik_fire_1 "..\..\animations\gen_rif\anims\AN_1P_GEN_RIF_B_Fire.smd"
+$sequence "delta_ik_fire_1" delta a_ik_fire_1 weightlist "weights_wpnonly"
+
+$animation a_ik_fire_2 "..\..\animations\gen_rif\anims\AN_1P_GEN_RIF_B_Fire2.smd"
+$sequence "delta_ik_fire_2" delta a_ik_fire_2 weightlist "weights_wpnonly"
+
+$animation a_ik_fire_3 "..\..\animations\gen_rif\anims\AN_1P_GEN_RIF_B_Fire3.smd"
+$sequence "delta_ik_fire_3" delta a_ik_fire_3 weightlist "weights_wpnonly"
+
+$animation a_ik_dryfire "..\..\animations\gen_rif\anims\AN_1P_GEN_RIF_B_Dryfire.smd"
+$sequence "delta_ik_dryfire" delta a_ik_dryfire weightlist "weights_wpnonly"
+
+// iron fire
+$animation a_ik_iron_fire_1 "..\..\animations\gen_rif\anims\AN_1P_GEN_RIF_B_Iron_Fire.smd"
+$sequence "delta_ik_iron_fire_1" delta a_ik_iron_fire_1 weightlist "weights_wpnonly"
+
+$animation a_ik_iron_fire_2 "..\..\animations\gen_rif\anims\AN_1P_GEN_RIF_B_Iron_Fire2.smd"
+$sequence "delta_ik_iron_fire_2" delta a_ik_iron_fire_2 weightlist "weights_wpnonly"
+
+$animation a_ik_iron_fire_3 "..\..\animations\gen_rif\anims\AN_1P_GEN_RIF_B_Iron_Fire3.smd"
+$sequence "delta_ik_iron_fire_3" delta a_ik_iron_fire_3 weightlist "weights_wpnonly"
+
+$animation a_ik_iron_dryfire "..\..\animations\gen_rif\anims\AN_1P_GEN_RIF_B_IRON_Dryfire.smd"
+$sequence "delta_ik_iron_dryfire" delta a_ik_iron_dryfire weightlist "weights_wpnonly"
+
+// down
+$animation a_ik_down "..\..\animations\gen_rif\anims\AN_1P_GEN_RIF_B_Down.smd"
+$sequence "delta_ik_down" delta a_ik_down weightlist "weights_wpnonly"
+
+// iron down
+$animation a_ik_iron_down "..\..\animations\gen_rif\anims\AN_1P_GEN_RIF_B_Iron_Blocked.smd"
+$sequence "delta_ik_iron_down" delta a_ik_iron_down weightlist "weights_wpnonly"
+
+// deployed fire
+$animation a_ik_dep_fire_1 "..\..\animations\gen_rif\anims\AN_1P_GEN_RIF_DEP_Fire.smd"
+$sequence "delta_ik_dep_fire_1" delta a_ik_dep_fire_1 weightlist "weights_wpnonly"
+
+$animation a_ik_dep_fire_2 "..\..\animations\gen_rif\anims\AN_1P_GEN_RIF_DEP_Fire2.smd"
+$sequence "delta_ik_dep_fire_2" delta a_ik_dep_fire_2 weightlist "weights_wpnonly"
+
+$animation a_ik_dep_fire_3 "..\..\animations\gen_rif\anims\AN_1P_GEN_RIF_DEP_Fire3.smd"
+$sequence "delta_ik_dep_fire_3" delta a_ik_dep_fire_3 weightlist "weights_wpnonly"
+
+// deployed iron fire
+$animation a_ik_dep_iron_fire_1 "..\..\animations\gen_rif\anims\AN_1P_GEN_RIF_DEP_IRON_Fire.smd"
+$sequence "delta_ik_dep_iron_fire_1" delta a_ik_dep_iron_fire_1 weightlist "weights_wpnonly"
+
+$animation a_ik_dep_iron_fire_2 "..\..\animations\gen_rif\anims\AN_1P_GEN_RIF_DEP_IRON_Fire2.smd"
+$sequence "delta_ik_dep_iron_fire_2" delta a_ik_dep_iron_fire_2 weightlist "weights_wpnonly"
+
+$animation a_ik_dep_iron_fire_3 "..\..\animations\gen_rif\anims\AN_1P_GEN_RIF_DEP_IRON_Fire3.smd"
+$sequence "delta_ik_dep_iron_fire_3" delta a_ik_dep_iron_fire_3 weightlist "weights_wpnonly"

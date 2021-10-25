@@ -1,6 +1,6 @@
 // Created by Crowbar 0.55
 
-$include "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\unreal_scale.qci"
+$include "..\..\..\unreal_scale.qci"
 
 $modelname "weapons\v_m16a3.mdl"
 
@@ -16,12 +16,12 @@ $bodygroup "standard"
 
 $bodygroup "mag"
 {
-	studio "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\upgrades\magazine\SKM_1P_AR15_Magazine_30.smd"
+	studio "..\..\upgrades\magazine\SKM_1P_AR15_Magazine_30.smd"
 }
 
 $bodygroup "gl"
 {
-	studio "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\upgrades\gl\SKM_1P_A_GL_M203.smd"
+	studio "..\..\upgrades\gl\SKM_1P_A_GL_M203.smd"
 }
 
 
@@ -32,7 +32,7 @@ $cdmaterials "models\weapons\ins2_sandstorm\"
 
 $attachment "muzzle" "b_wpn_muzzle" 0 0 0 rotate 0 0 0
 $attachment "muzzle_gl" "b_wpn_gl_muzzle" 0 0 0 rotate 0 0 0
-$attachment "muzzle_supp" "b_wpn_suppressor_muzzle" 0 0 0 rotate 0 0 0
+$attachment "muzzle_supp" "b_wpn_muzzle" 20 0 0 rotate 0 0 0
 $attachment "shell" "b_wpn_eject" 0 0 0 rotate 0 0 0
 $attachment "shell_40mm" "b_wpn_gl_casing" 0 0 0 rotate 0 0 0
 // $attachment "muzzle_ads" "A_Muzzle_Ironsight" 0 0 0 rotate 0 0 0
@@ -123,10 +123,10 @@ $bonemerge "a_laserflashlight"
 $definebone "A_GL" "b_wpn" 0 128 0 0 0 0 0 0 0 0 0 0
 $bonemerge "A_GL"
 
-$include "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\ins2_bones_follow_sandstorm.qci"
-$include "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\ins2_attachment_bones.qci"
+$include "..\..\..\ins2_bones_follow_sandstorm.qci"
+$include "..\..\..\ins2_attachment_bones.qci"
 
-$include "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\sandstorm_deltas_macros.qci"
+$include "..\..\..\sandstorm_deltas_macros.qci"
 
 $bonemerge "b_wpn_optic"
 $bonemerge "b_wpn_muzzle"
@@ -1139,7 +1139,7 @@ $sequence "glsetup_dryfire" {
 }
 
 $sequence "glsetup_reload" {
-	"F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\weapons\m4a1\anims\AN_1P_M4A1_GLSetup_Reload.smd"
+	"..\m4a1\anims\AN_1P_M4A1_GLSetup_Reload.smd"
 	activity "ACT_VM_RELOADEMPTY_GLSETUP" 1
 	{ event 5004 0 "Universal.GLBeginReload" }
 	{ event 5004 20 "Weapon_m203.OpenBarrel" }
@@ -1353,11 +1353,11 @@ $sequence "delta_boltback" delta {
 }
 
 $sequence delta_trigger delta {
-	"F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\weapons\m16a4\anims\AN_1P_m16a4_B_Fire_Trigger.smd"
+	"anims\AN_1P_m16a4_B_Fire_Trigger.smd"
 	weightlist "weights_trigger"
 }
 
-$animation "a_idle_gl_custom" "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\weapons\m4a1\anims\AN_1P_M4A1_GL_Idle.smd" subtract "idle" 0 frames 0 1
+$animation "a_idle_gl_custom" "..\m4a1\anims\AN_1P_M4A1_GL_Idle.smd" subtract "idle" 0 frames 0 1
 
 $sequence "delta_gl_custom" delta {
 	a_idle_gl_custom
@@ -1385,18 +1385,18 @@ $sequence "delta_glsetup_lhand" delta {
 
 $deltasequence "seq_glsetup_fire" "anims\AN_1P_m16a4_GLSetup_Fire.smd"
 $deltasequence "seq_glsetup_iron_fire" "anims\AN_1P_m16a4_GLSetup_IRON_Fire.smd"
-$deltasequence "seq_glsetup_in" "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\weapons\m4a1\anims\AN_1P_M4A1_B_GL_In.smd"
-$deltasequence "seq_glsetup_out" "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\weapons\m4a1\anims\AN_1P_M4A1_B_GL_Out.smd"
-$deltasequence "seq_glsetup_trigger" "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\weapons\m4a1\anims\AN_1P_M4A1_GLSetup_FireTrigger.smd"
+$deltasequence "seq_glsetup_in" "..\m4a1\anims\AN_1P_M4A1_B_GL_In.smd"
+$deltasequence "seq_glsetup_out" "..\m4a1\anims\AN_1P_M4A1_B_GL_Out.smd"
+$deltasequence "seq_glsetup_trigger" "..\m4a1\anims\AN_1P_M4A1_GLSetup_FireTrigger.smd"
 
-$deltasequence "seq_gen_rif_dryfire" "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_rif\anims\an_1p_gen_rif_b_dryfire.smd"
-$deltasequence "seq_gen_rif_iron_dryfire" "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_rif\anims\an_1p_gen_rif_b_iron_dryfire.smd"
+$deltasequence "seq_gen_rif_dryfire" "..\..\animations\gen_rif\anims\an_1p_gen_rif_b_dryfire.smd"
+$deltasequence "seq_gen_rif_iron_dryfire" "..\..\animations\gen_rif\anims\an_1p_gen_rif_b_iron_dryfire.smd"
 
 
-$deltasequence "seq_gen_rif_dep_fire" "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_rif\anims\AN_1P_GEN_RIF_DEP_Fire.smd"
+$deltasequence "seq_gen_rif_dep_fire" "..\..\animations\gen_rif\anims\AN_1P_GEN_RIF_DEP_Fire.smd"
 
-$deltasequence "seq_gen_rif_dep_iron_fire1" "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_rif\anims\AN_1P_GEN_RIF_DEP_IRON_Fire.smd"
-$deltasequence "seq_gen_rif_dep_iron_fire2" "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\animations\gen_rif\anims\AN_1P_GEN_RIF_DEP_IRON_Fire2.smd"
+$deltasequence "seq_gen_rif_dep_iron_fire1" "..\..\animations\gen_rif\anims\AN_1P_GEN_RIF_DEP_IRON_Fire.smd"
+$deltasequence "seq_gen_rif_dep_iron_fire2" "..\..\animations\gen_rif\anims\AN_1P_GEN_RIF_DEP_IRON_Fire2.smd"
 
 $animation "a_delta_gl_moveback" "anims\delta_gl_moveback.smd" subtract "idle" 0 frames 0 1
 

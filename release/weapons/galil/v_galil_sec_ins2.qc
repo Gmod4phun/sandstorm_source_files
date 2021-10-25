@@ -1,6 +1,6 @@
 // Created by Crowbar 0.55
 
-$include "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\unreal_scale.qci"
+$include "..\..\..\unreal_scale.qci"
 
 $modelname "weapons\v_galil_sar.mdl"
 
@@ -11,18 +11,18 @@ $bodygroup "weapon"
 
 $bodygroup "handguard"
 {
-	studio "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\upgrades\fallback\SKM_1P_A_FB_Galil_Sec_Handguard.smd"
+	studio "..\..\upgrades\fallback\SKM_1P_A_FB_Galil_Sec_Handguard.smd"
 }
 
 $bodygroup "handguard_railed"
 {
-	studio "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\upgrades\fallback\SKM_1P_A_FB_Galil_Sec_Handguard_Railed.smd"
+	studio "..\..\upgrades\fallback\SKM_1P_A_FB_Galil_Sec_Handguard_Railed.smd"
 }
 
-$bodygroup "handguard_railed_foregrip"
-{
-	studio "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\release\upgrades\fallback\SKM_1P_A_FB_Galil_Sec_Handguard_Railed_Foregrip.smd"
-}
+// $bodygroup "handguard_railed_foregrip"
+// {
+// 	studio "..\..\upgrades\fallback\SKM_1P_A_FB_Galil_Sec_Handguard_Railed_Foregrip.smd"
+// }
 
 $surfaceprop "default"
 $contents "solid"
@@ -38,6 +38,7 @@ $attachment "Laser" "A_LaserFlashlight" 0 0 0 rotate 0 0 0
 $attachment "Optic" "A_Optic" 0 0 0 rotate 0 0 0
 $attachment "Foregrip" "b_wpn_foregrip" 0 0 0 rotate 0 0 0
 $attachment "Magazine" "b_wpn_mag" 0 0 0 rotate 0 0 0
+$attachment "camera" "b_camera" 0 0 0 rotate 0 -90 0
 
 $bonemerge "b_root"
 $bonemerge "b_ch_middle"
@@ -156,12 +157,11 @@ $bonemerge "a_laserflashlight"
 $definebone "A_Optic" "b_wpn_optic" 0 0 0 0 180 -90 0 0 0 0 0 0
 $bonemerge "A_Optic"
 
-$definebone "A_Foregrip" "b_wpn" 0 50 0 0 0 0 0 0 0 0 0 0
+$definebone "A_Foregrip" "b_wpn_handguard_railed" 0.07 -4.55 0.575 0 180 0 0 0 0 0 0 0
 $bonemerge "A_Foregrip"
 
-$include "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\ins2_bones_follow_sandstorm.qci"
-// $include "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\ins2_attachment_bones.qci"
+$include "..\..\..\ins2_bones_follow_sandstorm.qci"
 
-$include "F:\SMD_PROJECTS\PHUNBASE_SANDSTORM\sandstorm_deltas_macros.qci"
+$include "..\..\..\sandstorm_deltas_macros.qci"
 
 $include "v_galils_sequences.qci"
